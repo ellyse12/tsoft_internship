@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en" class="sm:scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+</head>
+
+<body class="bg-white overflow-x-hidden ">
+    <header class="w-full relative">
+        <div class="px-2 md:px-4 lg:px-20">
+            <div id="headerPart1" class="hidden md:block w-full bg-light relative z-20">
+                <div class="container mx-auto px-4 md:px-8 lg:px-12">
+                    <div class="flex flex-col md:flex-row justify-between items-center h-auto md:h-10 py-4 md:py-6">
+                        <div class="text-xs font-semibold w-full md:w-auto mb-4 md:mb-0">
+                            <nav class="flex flex-wrap justify-center md:justify-start gap-3 md:gap-6">
+                                <a href="" class="hover:text-blue-500">Anasayfa</a>
+                                <a href="" class="hover:text-blue-500">Müşteri Hizmetleri</a>
+                                <a href="" class="hover:text-blue-500">Mağazalarımız</a>
+                                <a href="" class="hover:text-blue-500">Yetkili Servis</a>
+                                <a href="" class="hover:text-blue-500">Siparişlerim</a>
+                            </nav>
+                        </div>
+                        <div class="flex flex-col md:flex-row items-center gap-3 ">
+                            <div class="flex items-center gap-2">
+                                <img src="./img/svg/headphones_header.svg" alt="headphones" class="w-4 h-4">
+                                <a href="" class="text-xs hover:text-blue-500">0212 612 44 55</a>
+                                <div class="h-4 w-px bg-gray-300"></div>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="relative inline-block text-left">
+                                    <button id="langButton"
+                                        class="flex items-center px-3 py-1.5 rounded-md bg-white font-semibold text-sm">
+                                        <img id="langIcon" src="https://flagcdn.com/w40/tr.png" class="w-4 h-4"
+                                            alt="Türkçe">
+                                        <span id="langText" class="ml-1.5">Türkçe</span>
+                                    </button>
+                                    <ul id="langMenu"
+                                        class="absolute left-0 mt-1 w-28 bg-white border rounded-md shadow-sm hidden">
+                                        <li data-lang="Turkish" data-flag="https://flagcdn.com/w40/tr.png"
+                                            class="flex items-center gap-2 px-3 py-1.5 hover:bg-gray-100 cursor-pointer text-sm">
+                                            <img src="https://flagcdn.com/w40/tr.png" class="w-4 h-4" alt="Türkçe">
+                                            Türkçe
+                                        </li>
+                                        <li data-lang="English" data-flag="https://flagcdn.com/w40/gb.png"
+                                            class="flex items-center gap-2 px-3 py-1.5 hover:bg-gray-100 cursor-pointer text-sm">
+                                            <img src="https://flagcdn.com/w40/gb.png" class="w-4 h-4" alt="English">
+                                            English
+                                        </li>
+                                        <li data-lang="Arabic" data-flag="https://flagcdn.com/w40/sa.png"
+                                            class="flex items-center gap-2 px-3 py-1.5 hover:bg-gray-100 cursor-pointer text-sm">
+                                            <img src="https://flagcdn.com/w40/sa.png" class="w-4 h-4" alt="عربي">
+                                            عربي
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="relative inline-block text-left">
+                                    <button id="currencyButton"
+                                        class="flex items-center gap-1 px-3 py-1.5 rounded-md bg-white font-semibold text-sm">
+                                        <span id="currencyText">TL</span>
+                                    </button>
+                                    <ul id="currencyMenu"
+                                        class="absolute left-0 mt-1 w-28 bg-white border rounded-md shadow-sm hidden">
+                                        <li data-currency="TL"
+                                            class="px-3 py-1.5 hover:bg-gray-100 cursor-pointer text-sm">TL</li>
+                                        <li data-currency="USD"
+                                            class="px-3 py-1.5 hover:bg-gray-100 cursor-pointer text-sm">USD</li>
+                                        <li data-currency="EUR"
+                                            class="px-3 py-1.5 hover:bg-gray-100 cursor-pointer text-sm">EUR</li>
+                                        <li data-currency="SAR"
+                                            class="px-3 py-1.5 hover:bg-gray-100 cursor-pointer text-sm">SAR</li>
+                                        <li data-currency="RUB"
+                                            class="px-3 py-1.5 hover:bg-gray-100 cursor-pointer text-sm">RUB</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="stickyHeader" class="w-full md:px-16" style="padding-left: 3rem;">
+                <div class="w-full bg-white ">
+                    <div class="container">
+                        <div class="sm:flex items-center h-16">
+                            <div class="flex items-center gap-2">
+                                <button class="md:hidden items-center justify-center w-6 h-6" id="mobileMenuButton">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M4 6h16M4 12h16M4 18h16" />
+                                    </svg>
+                                </button>
+                                <div class="flex items-center">
+                                    <img src="https://tail.1ticaret.com/Data/EditorFiles/logo.svg" alt="logo"
+                                        class="w-24 md:w-32 lg:w-40">
+                                </div>
+                            </div>
+                            <div class="w-full flex justify-center ">
+                                <form action="" class="w-full relative max-w-md ">
+                                    <div
+                                        class="w-full py-2 pl-4 pr-10 bg-slate-100 border border-gray-300 rounded-xl peer focus-within:border-orange-500 focus-within:ring-2 focus-within:ring-orange-500 ">
+                                        <input type="text" class="w-full peer outline-none bg-slate-100"
+                                            placeholder="Ara">
+                                        <button
+                                            class=" peer-focus-within:stroke-orange-500 absolute top-1/2 right-3 transform -translate-y-1/2 text-gray-500">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                                fill="currentColor" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0">
+                                                </path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="hidden md:grid grid-cols-3 items-center gap-12 ml-auto">
+                                <a href="" class="mobile-icon group hover:text-orange-500 transition">
+                                    <img src="./img/svg/heart_svg.svg" alt=""
+                                        class="h-4 w-4 mr-2 group-hover:fill-orange-500">
+                                    <span class="text-sm font-semibold">Favorilerim</span>
+                                </a>
+                                <a href="" class="mobile-icon group hover:text-orange-500">
+                                    <img src="./img/svg/profile_svg.svg" alt=""
+                                        class="h-5 w-5 mr-2 group-hover:fill-orange-500">
+                                    <span class="text-sm font-semibold">Hesabım</span>
+                                </a>
+                                <a href="" class="mobile-icon group hover:text-orange-500">
+                                    <img src="./img/svg/shopping_cart_svg.svg" alt=""
+                                        class="h-4 w-4  mr-2 group hover:fill-orange-500">
+                                    <span class="text-sm font-semibold">Sepetim</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="hidden md:hidden bg-white shadow-lg overflow-hidden">
+                <nav class="flex flex-col p-4">
+                    <a href="" class="py-2 hover:text-orange-500">Anasayfa</a>
+                    <a href="" class="py-2 hover:text-orange-500">Müşteri Hizmetleri</a>
+                    <a href="" class="py-2 hover:text-orange-500">Mağazalarımız</a>
+                    <a href="" class="py-2 hover:text-orange-500">Yetkili Servis</a>
+                    <a href="" class="py-2 hover:text-orange-500">Siparişlerim</a>
+                    <a href="" class="py-2 hover:text-orange-500">Favorilerim</a>
+                    <a href="" class="py-2 hover:text-orange-500">Hesabım</a>
+                    <a href="" class="py-2 hover:text-orange-500">Sepetim</a>
+                </nav>
+            </div>
+
+            <!-- Header Part 3 -->
+            <div id="headerPart3" class="w-full md:px-12" style="padding-left: 2rem;">
+                <div class="w-full shadow-sm bg-white border-t border-light">
+                    <div class="container mx-auto px-4 lg:px-6">
+                        <nav class="hidden sm:flex sm:flex-row items-center overflow-x-auto">
+                            <div>
+                                <span
+                                    class="capitalize flex font-medium text-sm items-center pe-4 gap-1 cursor-pointer h-12">
+                                    <svg width="20px" height="20px" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M20 7L4 7" stroke="#1C274C" stroke-width="1.5"
+                                            stroke-linecap="round" />
+                                        <path d="M20 12L4 12" stroke="#1C274C" stroke-width="1.5"
+                                            stroke-linecap="round" />
+                                        <path d="M20 17L4 17" stroke="#1C274C" stroke-width="1.5"
+                                            stroke-linecap="round" />
+                                    </svg>Kategoriler
+                                </span>
+                            </div>
+                            <div>
+                                <a href=""
+                                    class="flex items-center font-medium text-sm px-4 gap-1 h-12 hover:text-orange-400">
+                                    Yeni
+                                </a>
+                            </div>
+                            <div>
+                                <a href=""
+                                    class="flex items-center font-medium text-sm px-4 gap-1 h-12 hover:text-orange-400">
+                                    İndirim
+                                </a>
+                            </div>
+                            <div>
+                                <a href=""
+                                    class="flex items-center font-medium text-sm px-4 gap-1 h-12 hover:text-orange-400">
+                                    Kampanya
+                                </a>
+                            </div>
+                            <div>
+                                <a href=""
+                                    class="flex items-center font-medium text-sm px-4 gap-1 h-12 hover:text-orange-400">
+                                    Markalar
+                                </a>
+                            </div>
+                            <div>
+                                <a href=""
+                                    class="flex items-center font-medium text-sm px-4 gap-1 h-12 hover:text-orange-400">
+                                    Galeri
+                                </a>
+                            </div>
+                            <div>
+                                <a href=""
+                                    class="flex items-center text-sm font-bold px-4 gap-1 h-12 hover:text-orange-400">
+                                    SSS
+                                </a>
+                            </div>
+                            <div>
+                                <a href=""
+                                    class="flex items-center font-bold text-sm px-4 gap-1 h-12 hover:text-orange-400">
+                                    Blog
+                                </a>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Header -->
+        <div class="block md:hidden w-full py-3 bg-white fixed top-0 z-50 shadow-sm rounded-b-sm"
+            style="padding-bottom: 20px;">
+            <div class="container px-2">
+                <div class="sm:flex items-center h-16">
+                    <div class="flex items-center gap-2 pb-2">
+                        <button class="md:hidden items-center justify-center w-6 h-6" id="mobileMenuButton">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+                        </button>
+                        <div class="flex items-center">
+                            <img src="https://tail.1ticaret.com/Data/EditorFiles/logo.svg" alt="logo"
+                                class="md:w-32 lg:w-40">
+                        </div>
+                        <div class="flex absolute right-2 gap-4">
+                            <a href="#favs">
+                                <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g>
+                                            <rect x="0" y="0" width="24" height="24"></rect>
+                                            <g transform="translate(4, 5)" fill-rule="nonzero" stroke="currentColor"
+                                                stroke-width="1.2">
+                                                <path
+                                                    d="M3.1684843,0.88689366 C3.88452239,0.604430594 4.64915577,0.536444 5.3775955,0.666673039 C6.10476497,0.796674985 6.79590724,1.12419123 7.36655772,1.63323526 L8.30240886,1.94292397 L8.67631747,1.59555287 C9.30643203,1.04922851 10.0918302,0.70853368 10.9249598,0.622464935 L11.530667,0.605549367 C12.6061221,0.656632191 13.5720564,1.1248801 14.2698994,1.85166131 C14.968902,2.57965024 15.3988246,3.56724142 15.4,4.6545315 C15.4,6.47740392 14.1350972,8.43376503 11.8567453,10.5080339 C11.0766824,11.2182227 10.2102946,11.9060381 9.29731037,12.5479998 L8.706177,12.9526025 C7.71992393,13.225889 7.47195732,13.066361 7.21146052,12.892057 L6.7145865,12.5519055 C5.79595037,11.907865 4.9268023,11.2190032 4.14492215,10.5078634 C1.86602412,8.43514786 0.6,6.47788952 0.599999927,4.65464913 C0.60040978,3.82329126 0.855143064,3.03424616 1.30335395,2.37665488 C1.75174084,1.71880537 2.39374367,1.19251374 3.1684843,0.88689366 Z">
+                                                </path>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </a>
+                            <a href="#profile">
+                                <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g>
+                                            <rect id="Rectangle-Copy-13" x="0" y="0" width="24" height="24"></rect>
+                                            <path
+                                                d="M8.7648381,13.237352 C8.85374487,13.237352 8.92931497,13.285096 9.05081721,13.3559101 L9.84980546,13.8472875 C10.0846751,13.9908334 10.408283,14.1316274 10.8132604,14.2568797 C11.207415,14.3789186 11.6065415,14.4400217 11.9994995,14.4400217 C12.3927825,14.4400217 12.7919295,14.3788986 13.185614,14.2569183 C13.5905776,14.131666 13.9140808,13.9909929 14.1520449,13.8458003 L14.8219999,13.4322033 C15.6042377,13.2374718 15.9516685,13.2956355 16.2655892,13.4145543 C16.5699402,13.5300546 16.8355358,13.6871084 17.0522608,13.8856663 C17.2655132,14.0809541 17.454068,14.3181898 17.6149563,14.5893803 C17.7680885,14.8471411 18.4,15.8806437 18.4,16.1516967 C18.4,16.8226304 18.1866677,17.3790691 17.7393692,17.7866094 C17.2817094,18.2035311 16.6729008,18.4 15.9488171,18.4 L8.05118288,18.4 C7.32692283,18.4 6.71810029,18.2035701 6.26068797,17.7867755 C5.81339771,17.3788482 5.6,16.8225648 5.6,16.1518165 C5.6,15.8805381 6.23129149,14.847494 6.38458888,14.5890925 C6.54514209,14.3183876 6.73370069,14.0812112 6.94707011,13.8857113 C7.16383319,13.6871097 7.42945907,13.5300429 7.73370921,13.414703 C8.04779897,13.2955739 8.39507487,13.237352 8.7648381,13.237352 Z M11.8965119,5.65095921 C12.8630158,5.65095921 13.704095,5.98234203 14.3878169,6.63682039 C15.0603176,7.28087225 15.4049756,8.07073989 15.4049756,8.9807905 C15.4049756,9.89098058 15.0603482,10.6807992 14.3879683,11.3247354 C13.7042128,11.9794593 12.863156,12.3108614 11.8965119,12.3108614 C10.9301553,12.3108614 10.0890606,11.9793784 9.40518052,11.3248552 C8.73270703,10.6809343 8.38804809,9.89102997 8.38804809,8.9807905 C8.38804809,8.07073688 8.73273736,7.28085726 9.40518052,6.63696539 C10.0888659,5.98230861 10.9298296,5.65095921 11.8965119,5.65095921 Z"
+                                                stroke="currentColor" stroke-width="1.2" fill-rule="nonzero"></path>
+                                        </g>
+                                    </g>
+                                </svg></a>
+                            <a href="#cart">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M5 5.49558C5 5.22188 5.2184 5 5.48782 5H5.84352C6.56459 5 7.17035 5.55081 7.24999 6.27887L7.38946 7.55414C7.66057 7.37356 7.97749 7.28306 8.32406 7.23402C8.78983 7.16811 9.385 7.16812 10.11 7.16814L17.4186 7.16814C18.6062 7.16814 19.3724 8.44993 18.8139 9.51832L17.0134 12.9624C16.8239 13.3248 16.6648 13.6292 16.5083 13.867C16.3425 14.1187 16.1585 14.3299 15.9027 14.4859C15.647 14.6418 15.3768 14.7076 15.0799 14.7381C14.7994 14.767 14.4596 14.767 14.0547 14.767H10.195C9.60498 14.767 9.11595 14.767 8.72465 14.7162C8.31268 14.6627 7.94579 14.5464 7.63751 14.267C7.32907 13.9874 7.17406 13.6304 7.0759 13.221C6.98275 12.8324 6.92873 12.3399 6.86361 11.7462L6.77545 10.9426C6.74599 10.6742 6.71846 10.4234 6.6961 10.1898L6.28032 6.38833L5.47061 6.13958M7.79371 11.2761L7.82969 11.604C7.89929 12.2385 7.94727 12.6671 8.02382 12.9864C8.09705 13.2919 8.1826 13.4327 8.28705 13.5274C8.39164 13.6222 8.53984 13.693 8.84834 13.733C9.17051 13.7749 9.5968 13.7758 10.227 13.7758H14.0308C14.4659 13.7758 14.7561 13.7752 14.9816 13.752C15.1962 13.73 15.3112 13.6906 15.4006 13.6361C15.4899 13.5816 15.5779 13.4973 15.6974 13.3159C15.823 13.125 15.9593 12.8657 16.1628 12.4763L17.9522 9.05344C18.1632 8.64982 17.8756 8.15929 17.4186 8.15929H10.1465C9.37592 8.15929 8.84918 8.16043 8.45865 8.21569C8.08176 8.26902 7.91621 8.36267 7.80908 8.48389C7.70219 8.60483 7.62882 8.78103 7.61812 9.16546C7.61118 9.41489 7.63088 9.71561 7.66744 10.0957L7.79068 11.2226C7.79265 11.2405 7.79365 11.2584 7.79371 11.2761ZM8.68911 16.8319C8.36919 16.8319 8.10983 17.0954 8.10983 17.4204C8.10983 17.7454 8.36919 18.0088 8.68911 18.0088C9.00903 18.0088 9.26839 17.7454 9.26839 17.4204C9.26839 17.0954 9.00903 16.8319 8.68911 16.8319ZM7.1342 17.4204C7.1342 16.548 7.83035 15.8407 8.68911 15.8407C9.54787 15.8407 10.244 16.548 10.244 17.4204C10.244 18.2927 9.54787 19 8.68911 19C7.83035 19 7.1342 18.2927 7.1342 17.4204ZM15.0917 16.8319C14.7718 16.8319 14.5124 17.0954 14.5124 17.4204C14.5124 17.7454 14.7718 18.0088 15.0917 18.0088C15.4116 18.0088 15.671 17.7454 15.671 17.4204C15.671 17.0954 15.4116 16.8319 15.0917 16.8319ZM13.5368 17.4204C13.5368 16.548 14.233 15.8407 15.0917 15.8407C15.9504 15.8407 16.6466 16.548 16.6466 17.4204C16.6466 18.2927 15.9504 19 15.0917 19C14.233 19 13.5368 18.2927 13.5368 17.4204Z"
+                                        fill="currentColor"></path>
+                                </svg></a>
+                        </div>
+                    </div>
+                    <div class="w-full flex justify-center ">
+                        <form action="" class="w-full relative max-w-md ">
+                            <div class="w-full py-2 pl-4 pr-10 bg-slate-100 border border-gray-300 rounded-xl peer focus-within:border-orange-500 focus-within:ring-2 focus-within:ring-orange-500 "
+                                style="height: 2.3rem;">
+                                <input type="text" class="w-full peer outline-none bg-slate-100" placeholder="Ara">
+                                <button
+                                    class=" peer-focus-within:stroke-orange-500 absolute top-1/2 right-3 transform -translate-y-1/2 text-gray-500">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0">
+                                        </path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="w-full h-20"></div>
+    <main class="mx-auto px-2 md:px-12 md:my-12 max-w-screen-xl">
+        <div class="swiper newsSwiper mx-auto mb-8 max-w-screen-xl px-4 sm:px-8">
+            <div class="swiper-wrapper ">
+                <div class="swiper-slide">
+                    <div class="flex flex-col bg-white border hover:shadow-md rounded-2xl overflow-hidden h-full mx-1">
+                        <div class="w-full aspect-[4/3] overflow-hidden">
+                            <img data-src="https://tail.1ticaret.com/Data/img/blogPost/8/tr_img_1_18.jpg" width="1380"
+                                height="1380" class="w-full aspect-[4/3] object-cover text-[0] ls-is-cached lazyloaded"
+                                loading="lazy" alt="Belçika'da e-ticaret pazarı büyüklüğü ve Türkiye karşılaştırması"
+                                src="https://tail.1ticaret.com/Data/img/blogPost/8/tr_img_1_18.jpg">
+                        </div>
+                        <div class="p-4">
+                            <div class="flex items-center justify-between mb-2">
+                                <a href="" class="text-sm font-medium">Geliştirmeler</a>
+                                <div class="text-primary text-sm">27.08.2016</div>
+                            </div>
+                            <a href="">
+                                <h2 class="font-medium line-clamp-2 hover:text-orange-500 transition-colors">
+                                    Belçika'da e-ticaret pazarı büyüklüğü ve Türkiye karşılaştırması
+                                </h2>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="flex flex-col bg-white border hover:shadow-md rounded-2xl overflow-hidden h-full mx-1">
+                        <div class="w-full aspect-[4/3] overflow-hidden">
+                            <img src="./img/jpg/random_jpg_1.jpg" alt="Haber Başlığı" width="1380" height="1380"
+                                class="w-full h-full object-cover rounded-t-xl" loading="lazy">
+                        </div>
+                        <div class="p-4">
+                            <div class="flex items-center justify-between mb-2">
+                                <a href="" class="text-sm font-medium">Geliştirmeler</a>
+                                <div class="text-primary text-sm">27.08.2016</div>
+                            </div>
+                            <a href="">
+                                <h2 class="font-medium line-clamp-2 hover:text-orange-500 transition-colors">
+                                    2Belçika'da e-ticaret pazarı büyüklüğü ve Türkiye karşılaştırması
+                                </h2>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="flex flex-col bg-white border hover:shadow-md rounded-2xl overflow-hidden h-full mx-1">
+                        <div class="w-full aspect-[4/3] overflow-hidden">
+                            <img src="./img/jpg/random_jpg_1.jpg" alt="Haber Başlığı" width="1380" height="1380"
+                                class="w-full h-full object-cover rounded-t-xl" loading="lazy">
+                        </div>
+                        <div class="p-4">
+                            <div class="flex items-center justify-between mb-2">
+                                <a href="" class="text-sm font-medium">Geliştirmeler</a>
+                                <div class="text-primary text-sm">27.08.2016</div>
+                            </div>
+                            <a href="">
+                                <h2 class="font-medium line-clamp-2 hover:text-orange-500 transition-colors">
+                                    3Belçika'da e-ticaret pazarı büyüklüğü ve Türkiye karşılaştırması
+                                </h2>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="flex flex-col bg-white border hover:shadow-md rounded-2xl overflow-hidden h-full mx-1">
+                        <div class="w-full aspect-[4/3] overflow-hidden">
+                            <img data-src="https://tail.1ticaret.com/Data/img/blogPost/8/tr_img_1_18.jpg" width="1380"
+                                height="1380" class="w-full aspect-[4/3] object-cover text-[0] ls-is-cached lazyloaded"
+                                loading="lazy" alt="Belçika'da e-ticaret pazarı büyüklüğü ve Türkiye karşılaştırması"
+                                src="https://tail.1ticaret.com/Data/img/blogPost/8/tr_img_1_18.jpg">
+                        </div>
+                        <div class="p-4">
+                            <div class="flex items-center justify-between mb-2">
+                                <a href="" class="text-sm font-medium">Geliştirmeler</a>
+                                <div class="text-primary text-sm">27.08.2016</div>
+                            </div>
+                            <a href="">
+                                <h2 class="font-medium line-clamp-2 hover:text-orange-500 transition-colors">
+                                    4 Belçika'da e-ticaret pazarı büyüklüğü ve Türkiye karşılaştırması
+                                </h2>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="flex flex-col bg-white border hover:shadow-md rounded-2xl overflow-hidden h-full mx-1">
+                        <div class="w-full aspect-[4/3] overflow-hidden">
+                            <img data-src="https://tail.1ticaret.com/Data/img/blogPost/7/tr_img_1_17.jpg" width="1380"
+                                height="1380" class="w-full aspect-[4/3] object-cover text-[0] ls-is-cached lazyloaded"
+                                loading="lazy" alt="İnternete erişim engelleniyor mu?"
+                                src="https://tail.1ticaret.com/Data/img/blogPost/7/tr_img_1_17.jpg">
+                        </div>
+                        <div class="p-4">
+                            <div class="flex items-center justify-between mb-2">
+                                <a href="" class="text-sm font-medium">Geliştirmeler</a>
+                                <div class="text-primary text-sm">27.08.2016</div>
+                            </div>
+                            <a href="">
+                                <h2 class="font-medium line-clamp-2 hover:text-orange-500 transition-colors">
+                                    5Belçika'da e-ticaret pazarı büyüklüğü ve Türkiye karşılaştırması
+                                </h2>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="flex flex-col bg-white border hover:shadow-md rounded-2xl overflow-hidden h-full mx-1">
+                        <div class="w-full aspect-[4/3] overflow-hidden">
+                            <img data-src="https://tail.1ticaret.com/Data/img/blogPost/6/tr_img_1_16.jpg" width="925"
+                                height="925" class="w-full aspect-[4/3] object-cover text-[0] ls-is-cached lazyloaded"
+                                loading="lazy" alt="Dijital Reklam Pastası Büyüyor!"
+                                src="https://tail.1ticaret.com/Data/img/blogPost/6/tr_img_1_16.jpg">
+                        </div>
+                        <div class="p-4">
+                            <div class="flex items-center justify-between mb-2">
+                                <a href="" class="text-sm font-medium">Geliştirmeler</a>
+                                <div class="text-primary text-sm">27.08.2016</div>
+                            </div>
+                            <a href="">
+                                <h2 class="font-medium line-clamp-2 hover:text-orange-500 transition-colors">
+                                    6Belçika'da e-ticaret pazarı büyüklüğü ve Türkiye karşılaştırması
+                                </h2>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="flex flex-col bg-white border hover:shadow-md rounded-2xl overflow-hidden h-full mx-1">
+                        <div class="w-full aspect-[4/3] overflow-hidden">
+                            <img src="./img/jpg/random_jpg_1.jpg" alt="Haber Başlığı" width="1380" height="1380"
+                                class="w-full h-full object-cover rounded-t-xl" loading="lazy">
+                        </div>
+                        <div class="p-4">
+                            <div class="flex items-center justify-between mb-2">
+                                <a href="" class="text-sm font-medium">Geliştirmeler</a>
+                                <div class="text-primary text-sm">27.08.2016</div>
+                            </div>
+                            <a href="">
+                                <h2 class="font-medium line-clamp-2 hover:text-orange-500 transition-colors">
+                                    7Belçika'da e-ticaret pazarı büyüklüğü ve Türkiye karşılaştırması
+                                </h2>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="flex flex-col bg-white border hover:shadow-md rounded-2xl overflow-hidden h-full mx-1">
+                        <div class="w-full aspect-[4/3] overflow-hidden">
+                            <img src="./img/jpg/random_jpg_1.jpg" alt="Haber Başlığı" width="1380" height="1380"
+                                class="w-full h-full object-cover rounded-t-xl" loading="lazy">
+                        </div>
+                        <div class="p-4">
+                            <div class="flex items-center justify-between mb-2">
+                                <a href="" class="text-sm font-medium">Geliştirmeler</a>
+                                <div class="text-primary text-sm">27.08.2016</div>
+                            </div>
+                            <a href="">
+                                <h2 class="font-medium line-clamp-2 hover:text-orange-500 transition-colors">
+                                    8 Belçika'da e-ticaret pazarı büyüklüğü ve Türkiye karşılaştırması
+                                </h2>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="flex flex-col bg-white border hover:shadow-md rounded-2xl overflow-hidden h-full mx-1">
+                        <div class="w-full aspect-[4/3] overflow-hidden">
+                            <img src="./img/jpg/random_jpg_1.jpg" alt="Haber Başlığı" width="1380" height="1380"
+                                class="w-full h-full object-cover rounded-t-xl" loading="lazy">
+                        </div>
+                        <div class="p-4">
+                            <div class="flex items-center justify-between mb-2">
+                                <a href="" class="text-sm font-medium">Geliştirmeler</a>
+                                <div class="text-primary text-sm">27.08.2016</div>
+                            </div>
+                            <a href="">
+                                <h2 class="font-medium line-clamp-2 hover:text-orange-500 transition-colors">
+                                    9 Belçika'da e-ticaret pazarı büyüklüğü ve Türkiye karşılaştırması
+                                </h2>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="sm:w-full h-36">
+        <footer class="sm:w-full bg-gray-50">
+            <div class="bg-gray-100 py-8 md:py-16">
+                <div class="container sm:mx-auto sm:px-4 md:px-8 lg:px-16">
+                    <div class=" flex flex-col md:flex-row items-center">
+                        <div class="sm:w-full flex flex-col items-center">
+                            <div class="text-center font-semibold text-base lg:text-xl">E-Bülten Aboneliği</div>
+                            <div class="text-center text-sm mb-4 px-2">Kampanya ve yeniliklerden haberdar olmak için
+                                e-bültenimize abone olun!</div>
+                            <form action="" class="w-full sm:w-full md:w-2/3 lg:w-1/2">
+                                <div class="flex flex-row items-start justify-center gap-4 md:gap-6 mb-4">
+                                    <div class="form-item sm:w-full">
+                                        <div class="relative">
+                                            <input type="email" name="email"
+                                                class=" focus-within:ring-2 focus-within:ring-orange-500 focus-within:border-orange-500 h-10 pe-8 outline-none rounded-lg px-2 w-full"
+                                                autocomplete="on" placeholder="E-posta adresinizi giriniz *"
+                                                aria-label="E-posta adresinizi giriniz">
+                                        </div>
+                                    </div>
+                                    <button type="submit" id="newsletter-button"
+                                        class="btn bg-orange-500 text-white rounded-md h-10 w-1/4 sm:w-full md:w-24 flex-shrink-0">Kayıt
+                                        Ol</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full px-2 py-6 md:py-12 sm:mx-2 md:mx-20"><!--footer part 2 -- bottom part-->
+                <div class="container sm:mx-auto sm:px-2 md:px-8">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 md:gap-4">
+                        <div class="order-4 lg:order-none *:flex *:flex-col *:justify-center *:mb-4">
+                            <div>
+                                <div class="flex items-center gap-1 font-semibold capitalize">
+                                    Adres
+                                </div>
+                                <address class="not-italic text-sm">
+                                    Esentepe Mahallesi, Haberler Sk. <br>No:13 ŞİŞLİ / İSTANBUL
+                                </address>
+                            </div>
+                            <div>
+                                <div class="flex items-center gap-1 font-semibold capitalize">
+                                    Telefon
+                                </div>
+                                <a href="" class="text-sm">
+                                    0212 612 44 55
+                                </a>
+                            </div>
+                        </div>
+                        <div class="border-b md:border-none">
+                            <!-- Accordion Button -->
+                            <button
+                                class="flex accordion-btn w-full justify-between items-center py-3 md:py-0 md:block">
+                                <div class="font-semibold flex items-center">
+                                    Önemli Bilgiler
+                                    <svg class="w-4 h-4 ml-2 transform transition-transform md:hidden absolute right-7"
+                                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </div>
+                            </button>
+
+                            <!-- Accordion Content -->
+                            <div
+                                class="accordion-content active md:block [&_a]:block [&_a]:text-sm [&_a:hover]:text-primary [&_a:hover]:underline mt-3 md:mt-0">
+                                <a href="">Teslimat Koşulları</a>
+                                <a href="">Üyelik Sözleşmesi</a>
+                                <a href="">Satış Sözleşmesi</a>
+                                <a href="">Garanti ve İade Koşulları</a>
+                                <a href="">Gizlilik ve Güvenlik</a>
+                            </div>
+                        </div>
+                        <div>
+                            <!-- Hızlı Erişim Accordion -->
+                            <div class="border-b md:border-none">
+                                <button
+                                    class="accordion-btn w-full flex justify-between items-center py-3 md:py-0 md:block">
+                                    <div class="font-semibold flex items-center">
+                                        Hızlı Erişim
+                                        <svg class="w-4 h-4 ml-2 transform transition-transform md:hidden absolute right-7"
+                                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M19 9l-7 7-7-7" />
+                                        </svg>
+                                    </div>
+                                </button>
+                                <div
+                                    class="accordion-content active md:block [&_a]:block [&_a]:text-sm [&_a]:py-1 [&_a:hover]:text-primary [&_a:hover]:underline mt-3 md:mt-0">
+                                    <a href="">Siparişlerim</a>
+                                    <a href="">Favorilerim</a>
+                                    <a href="">İadelerim</a>
+                                    <a href="">Şikayetlerim</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <!-- Gelişmiş Accordion -->
+                            <div class="border-b md:border-none">
+                                <button
+                                    class="accordion-btn w-full flex justify-between items-center py-3 md:py-0 md:block">
+                                    <div class="font-semibold flex items-center">
+                                        Gelişmiş
+                                        <svg class="w-4 h-4 ml-2 transform transition-transform md:hidden absolute right-7"
+                                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M19 9l-7 7-7-7" />
+                                        </svg>
+                                    </div>
+                                </button>
+                                <div
+                                    class="accordion-content active md:block [&_a]:block [&_a]:text-sm [&_a]:py-1 [&_a:hover]:text-primary [&_a:hover]:underline mt-3 md:mt-0">
+                                    <a href="">Teknik Destek</a>
+                                    <a href="">API Dokümantasyon</a>
+                                    <a href="">Geliştirici Araçları</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-last">
+                            <div class="font-semibold mb-3 capitalize">
+                                Sosyal Medya
+                            </div>
+                            <div
+                                class="*:mb-2 [&_a]:flex [&_a]:items-center [&_a]:gap-2 [&_a]:text-sm [&_a:hover]:text-primary [&_a:hover]:underline [&_img]:size-6 [&_img]:rounded-custom">
+                                <a href="">
+                                    <img src="https://tail.1ticaret.com/Data/img/menu_item/0/tr_img_1_40.svg"
+                                        alt="facebook">Facebook</a>
+                                <a href=""><img src="https://tail.1ticaret.com/Data/img/menu_item/7/tr_img_1_37.svg"
+                                        alt="">Twitter</a>
+                                <a href=""><img src="https://tail.1ticaret.com/Data/img/menu_item/8/tr_img_1_38.svg"
+                                        alt="">Linkedin</a>
+                                <a href=""><img src="https://tail.1ticaret.com/Data/img/menu_item/9/tr_img_1_39.svg"
+                                        alt="">Youtube</a>
+                                <a href=""><img src="https://tail.1ticaret.com/Data/img/menu_item/3/tr_img_1_73.svg"
+                                        alt="">Instagram</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--footerP2 infos and clickables-->
+            <div class="w-full"><!--footerP2 pics-->
+                <div class="container flex justify-center gap-1 flex-wrap pb-8 *:block *:w-auto *:h-7">
+                    <img class=" lazyloaded" loading="lazy"
+                        data-src="https://tail.1ticaret.com/theme/v5-mango/assets/footer/axess.svg" width="70"
+                        height="32" alt="Axess" src="https://tail.1ticaret.com/theme/v5-mango/assets/footer/axess.svg">
+                    <img class=" lazyloaded" loading="lazy"
+                        data-src="https://tail.1ticaret.com/theme/v5-mango/assets/footer/maximum.svg" width="70"
+                        height="32" alt="Maximum"
+                        src="https://tail.1ticaret.com/theme/v5-mango/assets/footer/maximum.svg">
+                    <img class=" lazyloaded" loading="lazy"
+                        data-src="https://tail.1ticaret.com/theme/v5-mango/assets/footer/cardfinans.svg" width="70"
+                        height="32" alt="Card Finans"
+                        src="https://tail.1ticaret.com/theme/v5-mango/assets/footer/cardfinans.svg">
+                    <img class=" lazyloaded" loading="lazy"
+                        data-src="https://tail.1ticaret.com/theme/v5-mango/assets/footer/visa.svg" width="70"
+                        height="32" alt="Visa" src="https://tail.1ticaret.com/theme/v5-mango/assets/footer/visa.svg">
+                    <img class=" lazyloaded" loading="lazy"
+                        data-src="https://tail.1ticaret.com/theme/v5-mango/assets/footer/master.svg" width="70"
+                        height="32" alt="Master"
+                        src="https://tail.1ticaret.com/theme/v5-mango/assets/footer/master.svg">
+                    <img class=" lazyloaded" loading="lazy"
+                        data-src="https://tail.1ticaret.com/theme/v5-mango/assets/footer/troy.svg" width="70"
+                        height="32" alt="Troy" src="https://tail.1ticaret.com/theme/v5-mango/assets/footer/troy.svg">
+                    <img class=" lazyloaded" loading="lazy"
+                        data-src="https://tail.1ticaret.com/theme/v5-mango/assets/footer/verified-by-visa.svg"
+                        width="172" height="32" alt="Verified by Visa"
+                        src="https://tail.1ticaret.com/theme/v5-mango/assets/footer/verified-by-visa.svg">
+                    <img class=" lazyloaded" loading="lazy"
+                        data-src="https://tail.1ticaret.com/theme/v5-mango/assets/footer/256-bit-ssl.svg" width="172"
+                        height="32" alt="256 Bit Ssl"
+                        src="https://tail.1ticaret.com/theme/v5-mango/assets/footer/256-bit-ssl.svg">
+                    <img class=" lazyloaded" loading="lazy"
+                        data-src="https://tail.1ticaret.com/theme/v5-mango/assets/footer/master-securecode.svg"
+                        width="172" height="32" alt="Master Securecode"
+                        src="https://tail.1ticaret.com/theme/v5-mango/assets/footer/master-securecode.svg">
+                    <img class=" lazyloaded" loading="lazy"
+                        data-src="https://tail.1ticaret.com/theme/v5-mango/assets/footer/verified-by-troy.svg"
+                        width="172" height="32" alt="Verified By Troy"
+                        src="https://tail.1ticaret.com/theme/v5-mango/assets/footer/verified-by-troy.svg">
+                </div>
+            </div><!--footerP2 pics-->
+            <div
+                style="width: 100% !important;height: auto !important;font-size: 12px !important;line-height: 30px;color:#3b3734;text-align:center;display: flex!important;justify-content:center !important;visibility: visible!important;opacity: 1!important;background: #f0f0f0;padding: 4px 10px;">
+                <!--footerP3 t-soft msg-->
+                <div>
+                    <a href="" style="color:inherit !important;font-weight:700 !important;"><span
+                            class="text-orange-600">T</span>-Soft</a>
+                    E-Ticaret Sistemleriyle Hazırlanmıştır
+                </div>
+            </div><!--footerP3 t-soft msg-->
+    </div><!--footer part 2 -- bottom part-->
+
+    </footer><!--2part footer-->
+    </div>
+    </div>
+    <style>
+        #mobileMenu {
+            position: fixed;
+            top: 56px;
+            left: 0;
+            right: 0;
+            width: 100%;
+            max-width: 100%;
+            background: white;
+            z-index: 999;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-height: calc(100vh - 56px);
+            overflow-y: auto;
+            overflow-x: hidden;
+            transition: transform 0.3s ease-in-out;
+            transform: translateY(-100%);
+        }
+
+        #mobileMenu.active {
+            transform: translateY(0);
+        }
+
+        #stickyHeader {
+            position: sticky;
+            top: 0;
+            z-index: 30;
+            background: white;
+            transition: top 0.3s ease-in-out;
+        }
+
+        .header-hidden {
+            transform: translateY(-100%);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .mobile-header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 56px;
+            padding: 0 16px;
+            background: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .mobile-logo-new {
+            display: flex;
+            align-items: center;
+        }
+
+        .mobile-icons {
+            display: flex;
+            gap: 4px;
+            align-items: center;
+        }
+
+        .mobile-icon {
+            height: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .container-safe {
+            width: 100%;
+            max-width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+
+        @media (min-width: 640px) {
+            .container-safe {
+                max-width: 640px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .container-safe {
+                max-width: 768px;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .container-safe {
+                max-width: 1024px;
+            }
+        }
+
+
+        @media (min-width: 768px) {
+            .sticky-header {
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                width: 100%;
+                z-index: 1000;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                background-color: white;
+            }
+        }
+
+        #headerPart1 {
+            z-index: 40;
+        }
+
+        #mobileHeader {
+            z-index: 50;
+        }
+
+        .newsSwiper {
+            width: 100%;
+            padding: 20px 0;
+        }
+
+        .swiper-slide {
+            width: 100% !important;
+        }
+
+        @media (min-width: 768px) {
+            .swiper-slide {
+                width: calc(33.333% - 20px) !important;
+                margin: 0 10px !important;
+            }
+        }
+
+        /*.newsSwiper .swiper-wrapper {
+            justify-content: center;
+        }*/
+
+        @media (max-width: 767px) {
+            .accordion-content:not(.active) {
+                max-height: 0;
+                overflow: hidden;
+                opacity: 0;
+                transition: all 0.3s ease;
+            }
+
+            .accordion-content.active {
+                max-height: 1000px;
+                opacity: 1;
+            }
+
+            .accordion-btn svg {
+                transition: transform 0.3s ease;
+            }
+
+            .accordion-btn .-rotate-180 {
+                transform: rotate(180deg);
+            }
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const currencyButton = document.getElementById("currencyButton");
+        const currencyMenu = document.getElementById("currencyMenu");
+        const currencyText = document.getElementById("currencyText");
+
+        currencyButton.addEventListener("click", () => {
+            currencyMenu.classList.toggle("hidden");
+        });
+
+        document.querySelectorAll("#currencyMenu li").forEach(item => {
+            item.addEventListener("click", () => {
+                currencyText.textContent = item.dataset.currency;
+                currencyMenu.classList.add("hidden");
+            });
+        });
+
+        document.addEventListener("click", (event) => {
+            if (!currencyButton.contains(event.target) && !currencyMenu.contains(event.target)) {
+                currencyMenu.classList.add("hidden");
+            }
+        });
+        const langButton = document.getElementById("langButton");
+        const langMenu = document.getElementById("langMenu");
+        const langText = document.getElementById("langText");
+        const langIcon = document.getElementById("langIcon");
+
+        langButton.addEventListener("click", () => {
+            langMenu.classList.toggle("hidden");
+        });
+
+        document.querySelectorAll("#langMenu li").forEach(item => {
+            item.addEventListener("click", () => {
+                langText.textContent = item.dataset.lang;
+                langIcon.src = item.dataset.flag;
+                langMenu.classList.add("hidden");
+            });
+        });
+
+        document.addEventListener("click", (event) => {
+            if (!langButton.contains(event.target) && !langMenu.contains(event.target)) {
+                langMenu.classList.add("hidden");
+            }
+        });
+        let lastScroll = 0;
+        const stickyHeader = document.getElementById('stickyHeader');
+        const part3 = document.getElementById('headerPart3');
+
+        function updateStickyHeader() {
+            let lastScroll = 0;
+            const stickyHeader = document.getElementById('stickyHeader');
+            const part3 = document.getElementById('headerPart3');
+
+            const currentScroll = window.pageYOffset;
+            console.log(currentScroll);
+            const isMobile = window.innerWidth <= 768;
+
+            if (currentScroll > lastScroll && currentScroll > 200) {
+                part3.style.transform = 'translateY(-100%)';
+                if (!isMobile) {
+                    stickyHeader.classList.add('sticky-header');
+                }
+            } else {
+                part3.style.transform = 'translateY(0)';
+                if (!isMobile) {
+                    stickyHeader.classList.remove('sticky-header');
+                }
+            }
+
+            if (isMobile) {
+                if (currentScroll > lastScroll) {
+
+                }
+            }
+
+            lastScroll = currentScroll;
+        }
+
+        window.addEventListener('scroll', updateStickyHeader);
+        window.addEventListener('resize', updateStickyHeader);
+        document.addEventListener('DOMContentLoaded', updateStickyHeader);
+
+        document.getElementById('mobileMenuButton').addEventListener('click', function () {
+            var mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.toggle('active');
+        });
+
+        const newsSwiper = new Swiper('.newsSwiper', {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            loop: false,
+            breakpoints: {
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 30
+                }
+            }
+        });
+
+        document.querySelectorAll('.accordion-btn').forEach(button => {
+            const content = button.nextElementSibling;
+            const svg = button.querySelector('svg');
+
+            // Mobilde varsayılan açık
+            if (window.innerWidth < 768) {
+                content.classList.add('active');
+                svg.classList.add('-rotate-180');
+            }
+
+            button.addEventListener('click', () => {
+                if (window.innerWidth < 768) {
+                    content.classList.toggle('active');
+                    svg.classList.toggle('-rotate-180');
+                }
+            });
+        });
+
+        // Pencere boyutu değiştiğinde kontrol
+        window.addEventListener('resize', () => {
+            document.querySelectorAll('.accordion-content').forEach(content => {
+                if (window.innerWidth >= 768) {
+                    content.classList.remove('active');
+                }
+            });
+        });
+
+
+    </script>
+</body>
+
+
+</html>

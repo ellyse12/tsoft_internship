@@ -1,0 +1,1176 @@
+<!DOCTYPE html>
+<html lang="tr-TR" dir="ltr">
+
+<head>
+    <meta charset="utf-8" />
+    <title>T-Soft E-ticaret Sistemleri Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    
+    <!-- Temel CSS -->
+    <link type="text/css" rel="stylesheet" href="/resources/assets/css/main.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:400,500,600,700&display=swap">
+
+    <!-- Custom Styles -->
+    <style>
+        .aspect-product {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            aspect-ratio: 1/1.5;
+        }
+    </style>
+</head>
+
+<body class="page-1">
+    <div class="body-inner">
+        <!-- Ana içerik yapısı -->
+        <div class="grid grid-cols-12 gap-x-4 lg:gap-x-6">
+            <div class="col-span-12 sm:col-span-12 md:col-span-12 lg:col-span-12 xl:col-span-12 2xl:col-span-12">
+                <!-- Header -->
+                <header class="w-full relative z-50 lg:mb-6 header text-sm leading-none">
+                    <!-- Top Bar -->
+                    <div class="w-full hidden lg:flex bg-light relative z-20">
+                        <div class="container">
+                            <div class="text-xs flex items-center py-3">
+                                <div class="w-1/2 flex">
+                                    <div class="flex flex-wrap gap-4 hover:*:underline *:font-medium"><a
+                                            id="header-top-menu-57"
+                                            href="https://tail.1ticaret.com/anasayfa">Anasayfa</a><a
+                                            id="header-top-menu-59"
+                                            href="https://tail.1ticaret.com/musteri-hizmetleri">Müşteri
+                                            Hizmetleri</a><a id="header-top-menu-60"
+                                            href="https://tail.1ticaret.com/magazalarimiz"
+                                            class="panelTestClass">Mağazalarımız</a><a id="header-top-menu-58"
+                                            href="https://tail.1ticaret.com/yetkili-servislerimiz">Yetkili
+                                            Servis</a><a id="header-top-menu-367"
+                                            href="https://tail.1ticaret.com/uye-siparisleri">Siparişlerim</a>
+                                </div>
+                            </div>
+                            <div class="w-1/2 flex justify-end">
+                                <ul
+                                    class="flex items-center gap-4 [&_li>a]:flex [&_li>a]:items-center [&_li>a]:gap-1 [&_li>a:hover]:underline">
+                                    <li class="border-e pe-4"><a href="tel:02126124455"><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" viewbox="0 0 16 16">
+                                                <path
+                                                    d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5" />
+                                            </svg><span dir="ltr">0212 612 44 55</span></a></li>
+                                    <li>
+                                        <div class="flex items-center gap-3">
+                                            <div class="dropdown">
+                                                <div class="cursor-pointer flex items-center gap-1"
+                                                    data-dropdown="lang-dropdown" data-toggle="dropdown"
+                                                    data-dropdown-right><img class="rounded-sm"
+                                                        src="/lang/tr/tr.webp" alt="tr" width="16"
+                                                        height="16"><span
+                                                        class="font-medium uppercase">tr</span><svg
+                                                        xmlns="http://www.w3.org/2000/svg" width="10"
+                                                        height="10" fill="currentColor" viewbox="0 0 16 16">
+                                                        <path fill-rule="evenodd"
+                                                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                                    </svg></div>
+                                                <div id="lang-dropdown" class="dropdown-body">
+                                                    <div class="dropdown-inner">
+                                                        <div
+                                                            class="flex flex-col items-start gap-2 p-4 cursor-pointer rounded-full *:flex *:gap-2 *:items-center [&_div:not(.active):hover]:underline [&_img]:rounded-sm">
+                                                            <div class="active text-primary font-bold"
+                                                                data-language="tr" data-toggle="language">
+                                                                <img data-src="/lang/tr/tr.webp" alt="tr"
+                                                                    width="16" height="16" class="lazyload"
+                                                                    loading="lazy"><span>Türkçe</span>
+                                                            </div>
+                                                            <div data-language="en" data-toggle="language">
+                                                                <img data-src="/lang/en/en.webp" alt="en"
+                                                                    width="16" height="16" class="lazyload"
+                                                                    loading="lazy"><span>English</span>
+                                                            </div>
+                                                            <div data-language="ar" data-toggle="language">
+                                                                <img data-src="/lang/ar/ar.webp" alt="ar"
+                                                                    width="16" height="16" class="lazyload"
+                                                                    loading="lazy"><span>عربي</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="dropdown">
+                                                <div class="dropdown">
+                                                    <div class="cursor-pointer flex items-center gap-1"
+                                                        data-dropdown="currency-dropdown"
+                                                        data-toggle="dropdown" data-dropdown-right><span
+                                                            class="font-medium uppercase">TL</span><svg
+                                                            xmlns="http://www.w3.org/2000/svg" width="10"
+                                                            height="10" fill="currentColor"
+                                                            viewbox="0 0 16 16">
+                                                            <path fill-rule="evenodd"
+                                                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                                        </svg></div>
+                                                    <div id="currency-dropdown" class="dropdown-body">
+                                                        <div class="dropdown-inner">
+                                                            <div
+                                                                class="flex flex-col items-start gap-2 p-4 cursor-pointer [&_span:not(.active):hover]:underline">
+                                                                <span class=" active text-primary font-bold"
+                                                                    data-currency="TL"
+                                                                    data-toggle="currency">TL</span><span
+                                                                    data-currency="USD"
+                                                                    data-toggle="currency">USD</span><span
+                                                                    data-currency="EUR"
+                                                                    data-toggle="currency">EUR</span><span
+                                                                    data-currency="SAR"
+                                                                    data-toggle="currency">SAR</span><span
+                                                                    data-currency="RUB"
+                                                                    data-toggle="currency">RUB</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Main Header -->
+                    <div class="w-full" data-toggle="sticky">
+                        <div class="w-full bg-white relative z-10">
+                            <div class="container">
+                                <div class="flex flex-wrap justify-between py-2 lg:py-4">
+                                    <div class="flex items-center lg:hidden me-1"><span
+                                            class="flex items-center p-1 font-bold cursor-pointer rounded-custom"
+                                            data-drawer-target="#mobile-menu-1001" data-toggle="drawer"><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                                fill="currentColor" viewbox="0 0 16 16">
+                                                <path fill-rule="evenodd"
+                                                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                                            </svg></span></div>
+                                    <div class="flex flex-1 sm:flex-none"><a href="https://tail.1ticaret.com/"
+                                            id="logo" aria-label="Logo">
+                                            <p><img src="/Data/EditorFiles/logo.svg" alt="logo" width="130"
+                                                    height="40"></p>
+                                        </a></div>
+                                    <div
+                                        class="w-full lg:w-1/3 flex justify-center items-center mt-2 lg:mt-0 order-last lg:-order-none [.sticky-down_&]:hidden [.live-search-active_&]:!flex lg:[.sticky-down_&]:flex">
+                                        <form action="//arama" method="get" autocomplete="off"
+                                            class="w-full relative" data-licence="0" data-toggle="live-search">
+                                            <div class="w-full relative"><input type="search" name="q"
+                                                    placeholder="Ara"
+                                                    class="form-control !bg-light !h-10 peer/search-input !pe-8"
+                                                    v-model="input" @click="update()"
+                                                    aria-label="search input"><button type="submit"
+                                                    class="absolute top-1/2 -translate-y-1/2 end-0 px-4 z-[1] peer-focus/search-input:text-primary transition-colors !h-10"
+                                                    aria-label="search button"><svg
+                                                        xmlns="http://www.w3.org/2000/svg" width="14"
+                                                        height="14" fill="currentColor" viewbox="0 0 16 16">
+                                                        <path
+                                                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                                                    </svg></button></div>
+                                            <div class="absolute top-full mt-2 start-1/2 -translate-x-1/2 rtl:translate-x-1/2 w-full min-w-full lg:w-[640px] z-50 bg-light rounded-custom shadow-md p-4"
+                                                v-if="(live_data.categories?.length || live_data.brands?.length || live_data.products?.length) && input.length > 3"
+                                                v-cloak>
+                                                <div
+                                                    class="flex items-start flex-wrap lg:flex-nowrap gap-4 max-h-[280px] lg:max-h-[460px] text-xs pr-2 -mr-2 overflow-y-auto">
+                                                    <div class="w-full lg:w-4/12 flex flex-col gap-4"
+                                                        v-if="live_data.categories?.length || live_data.brands?.length">
+                                                        <div class="bg-white rounded-custom p-4 lg:p-2"
+                                                            v-if="live_data.categories?.length">
+                                                            <div
+                                                                class="text-sm font-semibold lg:py-1 lg:px-2 mb-2 lg:mb-0">
+                                                                {{ t.categories }} <span class="text-xs">({{
+                                                                    live_data.categories.length }})</span></div>
+                                                            <ul
+                                                                class="flex items-start flex-wrap gap-2 lg:flex-col lg:gap-0">
+                                                                <li v-for="item in live_data.categories"><a
+                                                                        :href="'/' + item.url"
+                                                                        class="flex py-1 px-2 bg-light lg:bg-transparent rounded-custom hover:text-primary"><span
+                                                                            class="line-clamp-2">{{ item.title
+                                                                            }}</span></a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="bg-white rounded-custom p-4 lg:p-2"
+                                                            v-if="live_data.brands?.length">
+                                                            <div
+                                                                class="text-sm font-semibold lg:py-1 lg:px-2 mb-2 lg:mb-0">
+                                                                {{ t.brands }} <span class="text-xs">({{
+                                                                    live_data.brands.length }})</span></div>
+                                                            <ul class="flex items-start flex-col">
+                                                                <li v-for="item in live_data.brands"><a
+                                                                        :href="'/' + item.url"
+                                                                        class="flex py-1 px-2 bg-light lg:bg-transparent rounded-custom hover:text-primary"><span
+                                                                            class="line-clamp-2">{{ item.title
+                                                                            }}</span></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="w-full lg:w-8/12 bg-white rounded-custom p-2"
+                                                        v-if="live_data.products?.length">
+                                                        <div
+                                                            class="flex items-center justify-between py-1 px-2">
+                                                            <div class="text-sm font-semibold">
+                                                                {{ t.products }} <span class="text-xs">({{
+                                                                    live_data.products.length }})</span></div>
+                                                            <span
+                                                                class="text-primary font-semibold cursor-pointer hover:underline"
+                                                                @click="submitForm()">{{ t.see_all }}</span>
+                                                        </div>
+                                                        <ul class="flex flex-col gap-2 p-2">
+                                                            <li v-for="item in live_data.products"><a
+                                                                    :href="'/' + item.url"
+                                                                    class="flex items-center gap-2 p-2 border-custom rounded-custom bg-white hover:border-primary hover:ring-1 hover:ring-primary">
+                                                                    <figure
+                                                                        class="flex items-center justify-center size-12 flex-shrink-0"
+                                                                        v-if="item.image"><img :src="item.image"
+                                                                            :alt="item.title"
+                                                                            class="rounded-custom max-h-full max-w-full size-auto">
+                                                                    </figure><span
+                                                                        class="text-xs leading-relaxed line-clamp-2">{{
+                                                                        item.title }}</span>
+                                                                </a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="flex ms-2 lg:ms-0 justify-end capitalize">
+                                        <div class="flex items-center gap-4 font-medium"><a
+                                                href="/uye-girisi-sayfasi"
+                                                class="flex items-center gap-1  hover:text-primary transition"
+                                                aria-label="Favorilerim"><span class="relative"><svg
+                                                        width="24px" height="24px" viewbox="0 0 24 24"
+                                                        version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                        <g stroke="none" stroke-width="1" fill="none"
+                                                            fill-rule="evenodd">
+                                                            <g>
+                                                                <rect x="0" y="0" width="24" height="24"></rect>
+                                                                <g transform="translate(4, 5)"
+                                                                    fill-rule="nonzero" stroke="currentColor"
+                                                                    stroke-width="1.2">
+                                                                    <path
+                                                                        d="M3.1684843,0.88689366 C3.88452239,0.604430594 4.64915577,0.536444 5.3775955,0.666673039 C6.10476497,0.796674985 6.79590724,1.12419123 7.36655772,1.63323526 L8.30240886,1.94292397 L8.67631747,1.59555287 C9.30643203,1.04922851 10.0918302,0.70853368 10.9249598,0.622464935 L11.530667,0.605549367 C12.6061221,0.656632191 13.5720564,1.1248801 14.2698994,1.85166131 C14.968902,2.57965024 15.3988246,3.56724142 15.4,4.6545315 C15.4,6.47740392 14.1350972,8.43376503 11.8567453,10.5080339 C11.0766824,11.2182227 10.2102946,11.9060381 9.29731037,12.5479998 L8.706177,12.9526025 C7.71992393,13.225889 7.47195732,13.066361 7.21146052,12.892057 L6.7145865,12.5519055 C5.79595037,11.907865 4.9268023,11.2190032 4.14492215,10.5078634 C1.86602412,8.43514786 0.6,6.47788952 0.599999927,4.65464913 C0.60040978,3.82329126 0.855143064,3.03424616 1.30335395,2.37665488 C1.75174084,1.71880537 2.39374367,1.19251374 3.1684843,0.88689366 Z" />
+                                                                </g>
+                                                            </g>
+                                                        </g>
+                                                    </svg><span
+                                                        class="absolute -end-1 -top-2 empty:!hidden text-[9px] bg-slate-200 border rounded-full flex items-center justify-center min-w-4 min-h-4"
+                                                        data-toggle="favourite-count"></span></span><span
+                                                        class="sr-only lg:not-sr-only">Favorilerim</span></a>
+                                        <div class="dropdown flex items-center"><a
+                                                href="/uye-girisi-sayfasi"
+                                                class="cursor-pointer flex items-center gap-1 transition"
+                                                data-event="hover" data-dropdown="#account-dropdown"
+                                                data-toggle="dropdown" aria-label="Hesabım"><svg
+                                                    width="24px" height="24px" viewbox="0 0 24 24"
+                                                    version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                    <g stroke="none" stroke-width="1" fill="none"
+                                                        fill-rule="evenodd">
+                                                        <g>
+                                                            <rect id="Rectangle-Copy-13" x="0" y="0"
+                                                                width="24" height="24"></rect>
+                                                            <path
+                                                                d="M8.7648381,13.237352 C8.85374487,13.237352 8.92931497,13.285096 9.05081721,13.3559101 L9.84980546,13.8472875 C10.0846751,13.9908334 10.408283,14.1316274 10.8132604,14.2568797 C11.207415,14.3789186 11.6065415,14.4400217 11.9994995,14.4400217 C12.3927825,14.4400217 12.7919295,14.3788986 13.185614,14.2569183 C13.5905776,14.131666 13.9140808,13.9909929 14.1520449,13.8458003 L14.8219999,13.4322033 C15.6042377,13.2374718 15.9516685,13.2956355 16.2655892,13.4145543 C16.5699402,13.5300546 16.8355358,13.6871084 17.0522608,13.8856663 C17.2655132,14.0809541 17.454068,14.3181898 17.6149563,14.5893803 C17.7680885,14.8471411 18.4,15.8806437 18.4,16.1516967 C18.4,16.8226304 18.1866677,17.3790691 17.7393692,17.7866094 C17.2817094,18.2035311 16.6729008,18.4 15.9488171,18.4 L8.05118288,18.4 C7.32692283,18.4 6.71810029,18.2035701 6.26068797,17.7867755 C5.81339771,17.3788482 5.6,16.8225648 5.6,16.1518165 C5.6,15.8805381 6.23129149,14.847494 6.38458888,14.5890925 C6.54514209,14.3183876 6.73370069,14.0812112 6.94707011,13.8857113 C7.16383319,13.6871097 7.42945907,13.5300429 7.73370921,13.414703 C8.04779897,13.2955739 8.39507487,13.237352 8.7648381,13.237352 Z M11.8965119,5.65095921 C12.8630158,5.65095921 13.704095,5.98234203 14.3878169,6.63682039 C15.0603176,7.28087225 15.4049756,8.07073989 15.4049756,8.9807905 C15.4049756,9.89098058 15.0603482,10.6807992 14.3879683,11.3247354 C13.7042128,11.9794593 12.863156,12.3108614 11.8965119,12.3108614 C10.9301553,12.3108614 10.0890606,11.9793784 9.40518052,11.3248552 C8.73270703,10.6809343 8.38804809,9.89102997 8.38804809,8.9807905 C8.38804809,8.07073688 8.73273736,7.28085726 9.40518052,6.63696539 C10.0888659,5.98230861 10.9298296,5.65095921 11.8965119,5.65095921 Z"
+                                                                stroke="currentColor" stroke-width="1.2"
+                                                                fill-rule="nonzero" />
+                                                        </g>
+                                                    </g>
+                                                </svg><span
+                                                    class="sr-only lg:not-sr-only">Hesabım</span></a>
+                                        <div id="account-dropdown"
+                                            class="dropdown-body hidden lg:block !mt-4 before:!-top-4 before:!h-4 !start-1/2 -translate-x-1/2 rtl:translate-x-1/2 !min-w-44">
+                                            <div
+                                                class="bg-white relative rounded-custom shadow-sm border after:absolute after:top-0 after:start-1/2 after:w-3 after:h-3 after:-translate-x-1/2 rtl:after:translate-x-1/2 after:-translate-y-1/2 after:rotate-45 after:bg-white after:border-t after:border-l">
+                                                <div data-toggle="member-name"
+                                                    class="font-semibold text-primary pt-4 pb-2 px-4 border-b empty:!hidden">
+                                                </div>
+                                                <div class="text-xs p-2">
+                                                    <div class="flex flex-col gap-3 p-2"><a
+                                                            href="/uye-girisi-sayfasi"
+                                                            class="btn btn-primary !text-xs !h-9 w-full ">
+                                                            Giriş Yap
+                                                        </a><a href="/uye-kayit"
+                                                            class="btn btn-outline-primary !text-xs !h-9 w-full ">
+                                                            Kayıt Ol
+                                                        </a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><a href="/sepet"
+                                        class="flex items-center gap-1 hover:text-primary transition"
+                                        data-url="/api/storefront/snippet/cart-preview?include=cart"
+                                        data-toggle="cart-preview"><span class="relative"><svg
+                                                width="24" height="24" viewbox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M5 5.49558C5 5.22188 5.2184 5 5.48782 5H5.84352C6.56459 5 7.17035 5.55081 7.24999 6.27887L7.38946 7.55414C7.66057 7.37356 7.97749 7.28306 8.32406 7.23402C8.78983 7.16811 9.385 7.16812 10.11 7.16814L17.4186 7.16814C18.6062 7.16814 19.3724 8.44993 18.8139 9.51832L17.0134 12.9624C16.8239 13.3248 16.6648 13.6292 16.5083 13.867C16.3425 14.1187 16.1585 14.3299 15.9027 14.4859C15.647 14.6418 15.3768 14.7076 15.0799 14.7381C14.7994 14.767 14.4596 14.767 14.0547 14.767H10.195C9.60498 14.767 9.11595 14.767 8.72465 14.7162C8.31268 14.6627 7.94579 14.5464 7.63751 14.267C7.32907 13.9874 7.17406 13.6304 7.0759 13.221C6.98275 12.8324 6.92873 12.3399 6.86361 11.7462L6.77545 10.9426C6.74599 10.6742 6.71846 10.4234 6.6961 10.1898L6.28032 6.38833L5.47061 6.13958M7.79371 11.2761L7.82969 11.604C7.89929 12.2385 7.94727 12.6671 8.02382 12.9864C8.09705 13.2919 8.1826 13.4327 8.28705 13.5274C8.39164 13.6222 8.53984 13.693 8.84834 13.733C9.17051 13.7749 9.5968 13.7758 10.227 13.7758H14.0308C14.4659 13.7758 14.7561 13.7752 14.9816 13.752C15.1962 13.73 15.3112 13.6906 15.4006 13.6361C15.4899 13.5816 15.5779 13.4973 15.6974 13.3159C15.823 13.125 15.9593 12.8657 16.1628 12.4763L17.9522 9.05344C18.1632 8.64982 17.8756 8.15929 17.4186 8.15929H10.1465C9.37592 8.15929 8.84918 8.16043 8.45865 8.21569C8.08176 8.26902 7.91621 8.36267 7.80908 8.48389C7.70219 8.60483 7.62882 8.78103 7.61812 9.16546C7.61118 9.41489 7.63088 9.71561 7.66744 10.0957L7.79068 11.2226C7.79265 11.2405 7.79365 11.2584 7.79371 11.2761ZM8.68911 16.8319C8.36919 16.8319 8.10983 17.0954 8.10983 17.4204C8.10983 17.7454 8.36919 18.0088 8.68911 18.0088C9.00903 18.0088 9.26839 17.7454 9.26839 17.4204C9.26839 17.0954 9.00903 16.8319 8.68911 16.8319ZM7.1342 17.4204C7.1342 16.548 7.83035 15.8407 8.68911 15.8407C9.54787 15.8407 10.244 16.548 10.244 17.4204C10.244 18.2927 9.54787 19 8.68911 19C7.83035 19 7.1342 18.2927 7.1342 17.4204ZM15.0917 16.8319C14.7718 16.8319 14.5124 17.0954 14.5124 17.4204C14.5124 17.7454 14.7718 18.0088 15.0917 18.0088C15.4116 18.0088 15.671 17.7454 15.671 17.4204C15.671 17.0954 15.4116 16.8319 15.0917 16.8319ZM13.5368 17.4204C13.5368 16.548 14.233 15.8407 15.0917 15.8407C15.9504 15.8407 16.6466 16.548 16.6466 17.4204C16.6466 18.2927 15.9504 19 15.0917 19C14.233 19 13.5368 18.2927 13.5368 17.4204Z"
+                                                    fill="currentColor" />
+                                            </svg><span
+                                                class="absolute -end-1 -top-2 empty:!hidden text-[9px] bg-slate-200 border rounded-full flex items-center justify-center min-w-4 min-h-4"
+                                                data-toggle="cart-count"></span></span><span
+                                            class="sr-only lg:not-sr-only">Sepetim</span><span
+                                            class="hidden" data-toggle="cart-price"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </header>
+
+                        <!-- Navigation -->
+                        <div class="w-full">
+                            <div class="w-full shadow-sm bg-white border-t border-light hidden lg:block [.sticky-down_&]:absolute [.sticky-down_&]:-translate-y-full transition-transform">
+                                <div class="container">
+                                    <nav class="flex relative" data-toggle="menu">
+                                        <div class="group"><span id="header-menu-1001"
+                                                class="capitalize flex font-medium text-sm items-center pe-4 gap-1 cursor-pointer h-12 transition [.active_&]:group-hover:text-primary "><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    fill="currentColor" viewbox="0 0 16 16">
+                                                    <path fill-rule="evenodd"
+                                                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                                                </svg>
+                                                Kategoriler
+                                            </span>
+                                            <div
+                                                class="w-full h-[500px] shadow-lg rounded-b-custom overflow-hidden absolute [&:not(nav.relative_&)]:border-t bg-white inset-x-0 top-full opacity-0 invisible pointer-events-none [.active_&]:group-hover:opacity-100 [.active_&]:group-hover:visible [.active_&]:group-hover:pointer-events-auto">
+                                                <div
+                                                    class="container h-full [&:not(nav.relative_&)]:relative [&:not(nav.relative_&)]:!px-[1rem]">
+                                                    <ul
+                                                        class="w-[270px] h-full bg-gray-100 overflow-y-auto *:w-full">
+                                                        <li class="group/category"><a
+                                                                href="https://tail.1ticaret.com/elbise"
+                                                                id="header-menu-1471001"
+                                                                class="p-4 flex justify-between items-center group-hover/category:bg-white z-10 relative transition-colors "><span
+                                                                    class="font-semibold text-sm group-hover/category:text-primary transition-colors">Ev
+                                                                    & Mobilya</span><span
+                                                                    class="group-hover/category:text-primary transition-colors rtl:rotate-180"><svg
+                                                                        width="6" height="10" viewbox="0 0 6 10"
+                                                                        fill="currentColor"
+                                                                        xmlns="http://www.w3.org/2000/svg">
+                                                                        <path
+                                                                            d="M0.656333 0C0.83839 0 0.987296 0.0584615 1.11291 0.178054L5.75932 4.50373C5.84195 4.58242 5.90212 4.66293 5.93968 4.7434C5.97666 4.8226 5.99682 4.90975 6 5.0065C5.99989 5.09458 5.98177 5.17941 5.94574 5.2566C5.90882 5.33569 5.84762 5.41542 5.7605 5.49517L1.11448 9.82047C0.987296 9.94154 0.83839 10 0.656333 10C0.530468 10 0.419913 9.97238 0.321628 9.91742C0.22215 9.8618 0.143892 9.78803 0.0845271 9.69433C0.0279683 9.60505 0 9.50625 0 9.39339C0 9.23017 0.0656133 9.08678 0.205814 8.9533L4.3218 5.1441V4.8559L0.203826 1.04484C0.0656133 0.913223 0 0.76983 0 0.606613C0 0.497846 0.0278271 0.400936 0.0845271 0.311439C0.144265 0.217147 0.223194 0.142001 0.323525 0.0843849C0.421386 0.0281862 0.531237 0 0.656333 0Z" />
+                                                                        </svg></span></a>
+                                                        <div
+                                                            class="absolute w-full h-full overflow-y-auto ps-[270px] top-0 opacity-0 invisible group-hover/category:opacity-100 group-hover/category:visible">
+                                                            <div
+                                                                class="w-full p-6 text-xs !leading-6 *:mb-4 *:break-inside-avoid-column columns-4 *:block *:w-full">
+                                                                <div><a href="https://tail.1ticaret.com/anasayfa"
+                                                                        class="flex font-semibold text-sm hover:text-primary mb-1 transition-colors">Sofra
+                                                                        &amp; Mutfak</a>
+                                                                    <div
+                                                                        class="*:w-full [&_a]:flex [&_a]:transition-colors [&_a:hover]:text-primary">
+                                                                        <a
+                                                                            href="https://tail.1ticaret.com/elbise">Yemek
+                                                                            Takımı</a><a
+                                                                            href="https://tail.1ticaret.com/elbise">Çatal
+                                                                            Kaşık Bıçak Seti</a><a
+                                                                            href="https://tail.1ticaret.com/elbise">Baharat
+                                                                            Takımı</a><a
+                                                                            href="https://tail.1ticaret.com/elbise">Bardak</a><a
+                                                                            href="https://tail.1ticaret.com/elbise">Fırın
+                                                                            &amp; Kek Kalıbı</a><a
+                                                                            href="https://tail.1ticaret.com/elbise">Çaydanlık</a><a
+                                                                            href="https://tail.1ticaret.com/elbise">Tencere
+                                                                            Seti</a>
+                                                                    </div>
+                                                                </div>
+                                                                <div><a href="https://tail.1ticaret.com/anasayfa"
+                                                                        class="flex font-semibold text-sm hover:text-primary mb-1 transition-colors">Banyo</a>
+                                                                    <div
+                                                                        class="*:w-full [&_a]:flex [&_a]:transition-colors [&_a:hover]:text-primary">
+                                                                        <a
+                                                                            href="https://tail.1ticaret.com/elbise">Havlu
+                                                                            &amp; Havlu Seti</a><a
+                                                                            href="https://tail.1ticaret.com/elbise">Bornoz</a><a
+                                                                            href="https://tail.1ticaret.com/elbise">Banyo
+                                                                            Seti</a><a
+                                                                            href="https://tail.1ticaret.com/elbise">Banyo
+                                                                            Paspası</a><a
+                                                                            href="https://tail.1ticaret.com/elbise">Peştamal</a>
+                                                                    </div>
+                                                                </div>
+                                                                <div><a href="https://tail.1ticaret.com/anasayfa"
+                                                                        class="flex font-semibold text-sm hover:text-primary mb-1 transition-colors">Ev
+                                                                        Tekstili</a>
+                                                                    <div
+                                                                        class="*:w-full [&_a]:flex [&_a]:transition-colors [&_a:hover]:text-primary">
+                                                                        <a
+                                                                            href="https://tail.1ticaret.com/elbise">Yatak
+                                                                            Odası</a><a
+                                                                            href="https://tail.1ticaret.com/elbise">Halı
+                                                                            &amp; Kilim &amp; Paspas</a><a
+                                                                            href="https://tail.1ticaret.com/elbise">Perde</a><a
+                                                                            href="https://tail.1ticaret.com/elbise">Nevresim
+                                                                            Takımı</a><a
+                                                                            href="https://tail.1ticaret.com/elbise">Yastık</a><a
+                                                                            href="https://tail.1ticaret.com/elbise">Kırlent
+                                                                            Kılıfı</a><a
+                                                                            href="https://tail.1ticaret.com/elbise">Mutfak
+                                                                            Havlusu</a><a
+                                                                            href="https://tail.1ticaret.com/elbise">Uyku
+                                                                            Seti</a>
+                                                                    </div>
+                                                                </div>
+                                                                <div><a href="https://tail.1ticaret.com/anasayfa"
+                                                                        class="flex font-semibold text-sm hover:text-primary mb-1 transition-colors">Ev
+                                                                        Dekorasyon</a>
+                                                                    <div
+                                                                        class="*:w-full [&_a]:flex [&_a]:transition-colors [&_a:hover]:text-primary">
+                                                                        <a
+                                                                            href="https://tail.1ticaret.com/elbise">Dekoratif
+                                                                            Aksesuar</a><a
+                                                                            href="https://tail.1ticaret.com/elbise">Tablo</a><a
+                                                                            href="https://tail.1ticaret.com/elbise">Duvar
+                                                                            saati</a><a
+                                                                            href="https://tail.1ticaret.com/elbise">Oda
+                                                                            Kokusu</a><a
+                                                                            href="https://tail.1ticaret.com/elbise">Ayna</a><a
+                                                                            href="https://tail.1ticaret.com/elbise">Vazo
+                                                                            &amp; Eşya</a>
+                                                                    </div>
+                                                                </div>
+                                                                <div><a href="https://tail.1ticaret.com/anasayfa"
+                                                                        class="flex font-semibold text-sm hover:text-primary mb-1 transition-colors">Aydınlatma</a>
+                                                                    <div
+                                                                        class="*:w-full [&_a]:flex [&_a]:transition-colors [&_a:hover]:text-primary">
+                                                                        <a
+                                                                            href="https://tail.1ticaret.com/elbise">Avize</a><a
+                                                                            href="https://tail.1ticaret.com/elbise">Lambader</a><a
+                                                                            href="https://tail.1ticaret.com/elbise">Abajur</a>
+                                                                    </div>
+                                                                </div>
+                                                                <div><a href="https://tail.1ticaret.com/anasayfa"
+                                                                        class="flex font-semibold text-sm hover:text-primary mb-1 transition-colors">Mobilya</a>
+                                                                    <div
+                                                                        class="*:w-full [&_a]:flex [&_a]:transition-colors [&_a:hover]:text-primary">
+                                                                        <a
+                                                                            href="https://tail.1ticaret.com/elbise">Salon
+                                                                            &amp; Oturma Odası</a><a
+                                                                            href="https://tail.1ticaret.com/elbise">Yatak
+                                                                            Odası</a><a
+                                                                            href="https://tail.1ticaret.com/elbise">Bahçe
+                                                                            Mobilyası</a><a
+                                                                            href="https://tail.1ticaret.com/elbise">Çalışma
+                                                                            Odası</a><a
+                                                                            href="https://tail.1ticaret.com/elbise">Yemek
+                                                                            Odası</a><a
+                                                                            href="https://tail.1ticaret.com/elbise">Oturma
+                                                                            Grupları</a><a
+                                                                            href="https://tail.1ticaret.com/elbise">Genç
+                                                                            Odası</a>
+                                                                    </div>
+                                                                </div>
+                                                                <div><a href="https://tail.1ticaret.com/anasayfa"
+                                                                        class="flex font-semibold text-sm hover:text-primary mb-1 transition-colors">Hobi</a>
+                                                                    <div
+                                                                        class="*:w-full [&_a]:flex [&_a]:transition-colors [&_a:hover]:text-primary">
+                                                                        <a
+                                                                            href="https://tail.1ticaret.com/elbise">Parti
+                                                                            Malzemeleri</a><a
+                                                                            href="https://tail.1ticaret.com/elbise">Müzik
+                                                                            Alet</a><a
+                                                                            href="https://tail.1ticaret.com/elbise">Oyun
+                                                                            Grupları</a><a
+                                                                            href="https://tail.1ticaret.com/elbise">Led
+                                                                            Işık</a><a
+                                                                            href="https://tail.1ticaret.com/elbise">Hediyelik
+                                                                            Ürünler</a><a
+                                                                            href="https://tail.1ticaret.com/elbise">Hediye
+                                                                            Sepeti</a>
+                                                                    </div>
+                                                                </div>
+                                                                <div><a href="https://tail.1ticaret.com/anasayfa"
+                                                                        class="flex font-semibold text-sm hover:text-primary mb-1 transition-colors">Spor
+                                                                        &amp; Outdoor</a>
+                                                                    <div
+                                                                        class="*:w-full [&_a]:flex [&_a]:transition-colors [&_a:hover]:text-primary">
+                                                                        <a
+                                                                            href="https://tail.1ticaret.com/elbise">Koşu
+                                                                            Bandı</a><a
+                                                                            href="https://tail.1ticaret.com/elbise">Dumbell
+                                                                            &amp; Ağırlık</a><a
+                                                                            href="https://tail.1ticaret.com/elbise">Pilates
+                                                                            &amp; Yoga</a><a
+                                                                            href="https://tail.1ticaret.com/elbise">Eliptik
+                                                                            Bisiklet</a><a
+                                                                            href="https://tail.1ticaret.com/elbise">Yoga
+                                                                            Matı</a><a
+                                                                            href="https://tail.1ticaret.com/elbise">Sprocu
+                                                                            Eldiveni</a><a
+                                                                            href="https://tail.1ticaret.com/elbise">Pilates
+                                                                            Topu</a>
+                                                                    </div>
+                                                                </div>
+                                                                <div><a href="https://tail.1ticaret.com/anasayfa"
+                                                                        class="flex font-semibold text-sm hover:text-primary mb-1 transition-colors">Kitap</a>
+                                                                    <div
+                                                                        class="*:w-full [&_a]:flex [&_a]:transition-colors [&_a:hover]:text-primary">
+                                                                        <a
+                                                                            href="https://tail.1ticaret.com/elbise">E-Kitaplar</a><a
+                                                                            href="https://tail.1ticaret.com/elbise">Çizgi
+                                                                            Roman</a><a
+                                                                            href="https://tail.1ticaret.com/elbise">Yabancı
+                                                                            Dil</a><a
+                                                                            href="https://tail.1ticaret.com/elbise">Çocık
+                                                                            Kitabı</a><a
+                                                                            href="https://tail.1ticaret.com/elbise">Kişisel
+                                                                            Gelişim</a><a
+                                                                            href="https://tail.1ticaret.com/elbise">Yardımcı
+                                                                            Kitaplar</a><a
+                                                                            href="https://tail.1ticaret.com/elbise">Çocuk
+                                                                            Bakım Kitapları</a>
+                                                                    </div>
+                                                                </div>
+                                                                <div><a href="https://tail.1ticaret.com/anasayfa"
+                                                                        class="flex font-semibold text-sm hover:text-primary mb-1 transition-colors">Kırtasiye</a>
+                                                                    <div
+                                                                        class="*:w-full [&_a]:flex [&_a]:transition-colors [&_a:hover]:text-primary">
+                                                                        <a
+                                                                            href="https://tail.1ticaret.com/elbise">Defter</a><a
+                                                                            href="https://tail.1ticaret.com/elbise">Ajanda</a><a
+                                                                            href="https://tail.1ticaret.com/elbise">Fotokopi
+                                                                            Kağıdı</a><a
+                                                                            href="https://tail.1ticaret.com/elbise">Kalem</a><a
+                                                                            href="https://tail.1ticaret.com/elbise">Boya
+                                                                            Seti</a><a
+                                                                            href="https://tail.1ticaret.com/elbise">Masaüstü
+                                                                            Gereçleri</a><a
+                                                                            href="https://tail.1ticaret.com/elbise">Ofis
+                                                                            Teknolojisi</a>
+                                                                    </div>
+                                                                </div>
+                                                                <div><a href="https://tail.1ticaret.com/anasayfa"
+                                                                        class="flex font-semibold text-sm hover:text-primary mb-1 transition-colors">Yapı
+                                                                        Market</a>
+                                                                    <div
+                                                                        class="*:w-full [&_a]:flex [&_a]:transition-colors [&_a:hover]:text-primary">
+                                                                        <a
+                                                                            href="https://tail.1ticaret.com/elbise">Elektrikli
+                                                                            El Aleti</a><a
+                                                                            href="https://tail.1ticaret.com/elbise">Hırdavat
+                                                                            Ürünleri</a><a
+                                                                            href="https://tail.1ticaret.com/elbise">Boya</a><a
+                                                                            href="https://tail.1ticaret.com/elbise">Matkap</a><a
+                                                                            href="https://tail.1ticaret.com/elbise">Ampul</a>
+                                                                    </div>
+                                                                </div>
+                                                                <div><a href="https://tail.1ticaret.com/anasayfa"
+                                                                        class="flex font-semibold text-sm hover:text-primary mb-1 transition-colors">Otomobil</a>
+                                                                    <div
+                                                                        class="*:w-full [&_a]:flex [&_a]:transition-colors [&_a:hover]:text-primary">
+                                                                        <a
+                                                                            href="https://tail.1ticaret.com/elbise">Oto
+                                                                            Aksesuar</a><a
+                                                                            href="https://tail.1ticaret.com/elbise">Araç
+                                                                            Kokusu</a><a
+                                                                            href="https://tail.1ticaret.com/elbise">Oto
+                                                                            Lastik</a><a
+                                                                            href="https://tail.1ticaret.com/elbise">Oto
+                                                                            Paspası</a><a
+                                                                            href="https://tail.1ticaret.com/elbise">Güneşlik
+                                                                            &amp; Perde</a><a
+                                                                            href="https://tail.1ticaret.com/elbise">Kol
+                                                                            Dayama</a><a
+                                                                            href="https://tail.1ticaret.com/elbise">Kolçak</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="group/category"><a
+                                                            href="https://tail.1ticaret.com/elbise"
+                                                            id="header-menu-1441001"
+                                                            class="p-4 flex justify-between items-center group-hover/category:bg-white z-10 relative transition-colors "><span
+                                                                class="font-semibold text-sm group-hover/category:text-primary transition-colors">Kadın</span><span
+                                                                class="group-hover/category:text-primary transition-colors rtl:rotate-180"><svg
+                                                                    width="6" height="10" viewbox="0 0 6 10"
+                                                                    fill="currentColor"
+                                                                    xmlns="http://www.w3.org/2000/svg">
+                                                                    <path
+                                                                        d="M0.656333 0C0.83839 0 0.987296 0.0584615 1.11291 0.178054L5.75932 4.50373C5.84195 4.58242 5.90212 4.66293 5.93968 4.7434C5.97666 4.8226 5.99682 4.90975 6 5.0065C5.99989 5.09458 5.98177 5.17941 5.94574 5.2566C5.90882 5.33569 5.84762 5.41542 5.7605 5.49517L1.11448 9.82047C0.987296 9.94154 0.83839 10 0.656333 10C0.530468 10 0.419913 9.97238 0.321628 9.91742C0.22215 9.8618 0.143892 9.78803 0.0845271 9.69433C0.0279683 9.60505 0 9.50625 0 9.39339C0 9.23017 0.0656133 9.08678 0.205814 8.9533L4.3218 5.1441V4.8559L0.203826 1.04484C0.0656133 0.913223 0 0.76983 0 0.606613C0 0.497846 0.0278271 0.400936 0.0845271 0.311439C0.144265 0.217147 0.223194 0.142001 0.323525 0.0843849C0.421386 0.0281862 0.531237 0 0.656333 0Z" />
+                                                                    </svg></span></a>
+                                                        <div
+                                                            class="absolute w-full h-full overflow-y-auto ps-[270px] top-0 opacity-0 invisible group-hover/category:opacity-100 group-hover/category:visible">
+                                                            <div
+                                                                class="w-full p-6 text-xs !leading-6 *:mb-4 *:break-inside-avoid-column columns-4 *:block *:w-full">
+                                                                <div><a href="https://tail.1ticaret.com/anasayfa"
+                                                                        class="flex font-semibold text-sm hover:text-primary mb-1 transition-colors">Spor
+                                                                        &amp; Outdoor</a>
+                                                                    <div
+                                                                        class="*:w-full [&_a]:flex [&_a]:transition-colors [&_a:hover]:text-primary">
+                                                                        <a
+                                                                            href="https://tail.1ticaret.com/anasayfa">Sweatshirt</a><a
+                                                                            href="https://tail.1ticaret.com/anasayfa">Tişört</a><a
+                                                                            href="https://tail.1ticaret.com/anasayfa">Tayt</a><a
+                                                                            href="https://tail.1ticaret.com/anasayfa">Eşofman</a><a
+                                                                            href="https://tail.1ticaret.com/anasayfa">Koşu
+                                                                            Ayakkabısı</a><a
+                                                                            href="https://tail.1ticaret.com/anasayfa">Spor
+                                                                            Çantası</a><a
+                                                                            href="https://tail.1ticaret.com/anasayfa">Outdoor
+                                                                            Ayakkabı</a><a
+                                                                            href="https://tail.1ticaret.com/anasayfa">Kar
+                                                                            Botu</a><a
+                                                                            href="https://tail.1ticaret.com/anasayfa">Outdoor
+                                                                            Ekipmanları</a><a
+                                                                            href="https://tail.1ticaret.com/anasayfa">Sporcu
+                                                                            Besinleri</a><a
+                                                                            href="https://tail.1ticaret.com/anasayfa">Sporcu
+                                                                            Aksesuarları</a><a
+                                                                            href="https://tail.1ticaret.com/anasayfa">Outdoor
+                                                                            Çanta</a><a
+                                                                            href="https://tail.1ticaret.com/anasayfa">Kayak
+                                                                            Malzemeleri</a><a
+                                                                            href="https://tail.1ticaret.com/anasayfa">Uyku
+                                                                            Tulumu</a><a
+                                                                            href="https://tail.1ticaret.com/anasayfa">Mat</a><a
+                                                                            href="https://tail.1ticaret.com/anasayfa">Dağcılık</a>
+                                                                    </div>
+                                                                </div>
+                                                                <div><a href="https://tail.1ticaret.com/anasayfa"
+                                                                        class="flex font-semibold text-sm hover:text-primary mb-1 transition-colors">Ayakkabı</a>
+                                                                    <div
+                                                                        class="*:w-full [&_a]:flex [&_a]:transition-colors [&_a:hover]:text-primary">
+                                                                        <a
+                                                                            href="https://tail.1ticaret.com/anasayfa">Topuklu
+                                                                            Ayakkabı</a><a
+                                                                            href="https://tail.1ticaret.com/anasayfa">Sneaker</a><a
+                                                                            href="https://tail.1ticaret.com/anasayfa">Günlük
+                                                                            Ayakkabı</a><a
+                                                                            href="https://tail.1ticaret.com/anasayfa">Babet</a><a
+                                                                            href="https://tail.1ticaret.com/anasayfa">Sandalet</a><a
+                                                                            href="https://tail.1ticaret.com/anasayfa">Bot</a><a
+                                                                            href="https://tail.1ticaret.com/anasayfa">Çizme</a><a
+                                                                            href="https://tail.1ticaret.com/anasayfa">Kar
+                                                                            Botu</a><a
+                                                                            href="https://tail.1ticaret.com/anasayfa">Loafer</a>
+                                                                    </div>
+                                                                </div>
+                                                                <div><a href="https://tail.1ticaret.com/anasayfa"
+                                                                        class="flex font-semibold text-sm hover:text-primary mb-1 transition-colors">Çanta</a>
+                                                                    <div
+                                                                        class="*:w-full [&_a]:flex [&_a]:transition-colors [&_a:hover]:text-primary">
+                                                                        <a
+                                                                            href="https://tail.1ticaret.com/anasayfa">Omuz
+                                                                            Çantası</a><a
+                                                                            href="https://tail.1ticaret.com/anasayfa">Sırt
+                                                                            Çantası</a><a
+                                                                            href="https://tail.1ticaret.com/anasayfa">Bel
+                                                                            Çantası</a><a
+                                                                            href="https://tail.1ticaret.com/anasayfa">Okul
+                                                                            Çantası</a><a
+                                                                            href="https://tail.1ticaret.com/anasayfa">Laptop
+                                                                            Çantası</a><a
+                                                                            href="https://tail.1ticaret.com/anasayfa">Portföy</a><a
+                                                                            href="https://tail.1ticaret.com/anasayfa">Postacı
+                                                                            Çantası</a><a
+                                                                            href="https://tail.1ticaret.com/anasayfa">El
+                                                                            Çantası</a><a
+                                                                            href="https://tail.1ticaret.com/anasayfa">Kanvas
+                                                                            Çanta</a><a
+                                                                            href="https://tail.1ticaret.com/anasayfa">Makyaj
+                                                                            Çantası</a><a
+                                                                            href="https://tail.1ticaret.com/anasayfa">Abiye
+                                                                            Çanta</a><a
+                                                                            href="https://tail.1ticaret.com/anasayfa">Çapraz
+                                                                            Çanta</a><a
+                                                                            href="https://tail.1ticaret.com/anasayfa">Bez
+                                                                            Çanta</a><a
+                                                                            href="https://tail.1ticaret.com/anasayfa">Anne
+                                                                            Bebek Çantası</a><a
+                                                                            href="https://tail.1ticaret.com/anasayfa">Evrak
+                                                                            Çantası</a><a
+                                                                            href="https://tail.1ticaret.com/anasayfa">Tote
+                                                                            Çamta</a><a
+                                                                            href="https://tail.1ticaret.com/anasayfa">Beslenme
+                                                                            Çantası</a><a
+                                                                            href="https://tail.1ticaret.com/anasayfa">Kartlık</a>
+                                                                    </div>
+                                                                </div>
+                                                                <div><a href="https://tail.1ticaret.com/anasayfa"
+                                                                        class="flex font-semibold text-sm hover:text-primary mb-1 transition-colors">İç
+                                                                        Giyim</a>
+                                                                    <div
+                                                                        class="*:w-full [&_a]:flex [&_a]:transition-colors [&_a:hover]:text-primary">
+                                                                        <a
+                                                                            href="https://tail.1ticaret.com/anasayfa">Pijama
+                                                                            Takımı</a><a
+                                                                            href="https://tail.1ticaret.com/anasayfa">Gecelik</a><a
+                                                                            href="https://tail.1ticaret.com/anasayfa">Korse</a><a
+                                                                            href="https://tail.1ticaret.com/anasayfa">Çorap</a>
+                                                                    </div>
+                                                                </div>
+                                                                <div><a href="https://tail.1ticaret.com/anasayfa"
+                                                                        class="flex font-semibold text-sm hover:text-primary mb-1 transition-colors">Kozmetik</a>
+                                                                    <div
+                                                                        class="*:w-full [&_a]:flex [&_a]:transition-colors [&_a:hover]:text-primary">
+                                                                        <a
+                                                                            href="https://tail.1ticaret.com/anasayfa">Parfüm</a><a
+                                                                            href="https://tail.1ticaret.com/anasayfa">Göz
+                                                                            Makyajı</a><a
+                                                                            href="https://tail.1ticaret.com/anasayfa">Cilt
+                                                                            Bakım</a><a
+                                                                            href="https://tail.1ticaret.com/anasayfa">Saç
+                                                                            Bakımı</a><a
+                                                                            href="https://tail.1ticaret.com/anasayfa">Makyaj</a><a
+                                                                            href="https://tail.1ticaret.com/anasayfa">Ağız
+                                                                            Bakım</a><a
+                                                                            href="https://tail.1ticaret.com/anasayfa">Vücut
+                                                                            Bakım</a><a
+                                                                            href="https://tail.1ticaret.com/anasayfa">Duş
+                                                                            Jeli</a><a
+                                                                            href="https://tail.1ticaret.com/anasayfa">Ruj</a><a
+                                                                            href="https://tail.1ticaret.com/anasayfa">Dudak
+                                                                            Nemlendirici</a><a
+                                                                            href="https://tail.1ticaret.com/anasayfa">Eyeliner</a><a
+                                                                            href="https://tail.1ticaret.com/anasayfa">BB
+                                                                            &amp; CC Krem</a>
+                                                                    </div>
+                                                                </div>
+                                                                <div><a href="https://tail.1ticaret.com/anasayfa"
+                                                                        class="flex font-semibold text-sm hover:text-primary mb-1 transition-colors">Giyim</a>
+                                                                    <div
+                                                                        class="*:w-full [&_a]:flex [&_a]:transition-colors [&_a:hover]:text-primary">
+                                                                        <a
+                                                                            href="https://tail.1ticaret.com/anasayfa">Tişört</a><a
+                                                                            href="https://tail.1ticaret.com/anasayfa">Şort</a><a
+                                                                            href="https://tail.1ticaret.com/anasayfa">Gömlek</a><a
+                                                                            href="https://tail.1ticaret.com/anasayfa">Eşofman</a><a
+                                                                            href="https://tail.1ticaret.com/anasayfa">Pantolon</a><a
+                                                                            href="https://tail.1ticaret.com/anasayfa">Ceket</a><a
+                                                                            href="https://tail.1ticaret.com/anasayfa">Kot
+                                                                            Pantolon</a><a
+                                                                            href="https://tail.1ticaret.com/anasayfa">Yelek</a><a
+                                                                            href="https://tail.1ticaret.com/anasayfa">Kazak</a><a
+                                                                            href="https://tail.1ticaret.com/anasayfa">Mont</a><a
+                                                                            href="https://tail.1ticaret.com/anasayfa">Takım
+                                                                            Elbise</a><a
+                                                                            href="https://tail.1ticaret.com/anasayfa">Sweatshirt</a><a
+                                                                            href="https://tail.1ticaret.com/anasayfa">Deri
+                                                                            Mont</a><a
+                                                                            href="https://tail.1ticaret.com/anasayfa">Kaban</a><a
+                                                                            href="https://tail.1ticaret.com/anasayfa">Hırka</a><a
+                                                                            href="https://tail.1ticaret.com/anasayfa">Trençkot</a><a
+                                                                            href="https://tail.1ticaret.com/anasayfa">Palto</a><a
+                                                                            href="https://tail.1ticaret.com/anasayfa">Yağmurluk</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="group/category"><a
+                                                            href="https://tail.1ticaret.com/anasayfa"
+                                                            id="header-menu-1451001"
+                                                            class="p-4 flex justify-between items-center group-hover/category:bg-white z-10 relative transition-colors "><span
+                                                                class="font-semibold text-sm group-hover/category:text-primary transition-colors">Erkek</span><span
+                                                                class="group-hover/category:text-primary transition-colors rtl:rotate-180"><svg
+                                                                    width="6" height="10" viewbox="0 0 6 10"
+                                                                    fill="currentColor"
+                                                                    xmlns="http://www.w3.org/2000/svg">
+                                                                    <path
+                                                                        d="M0.656333 0C0.83839 0 0.987296 0.0584615 1.11291 0.178054L5.75932 4.50373C5.84195 4.58242 5.90212 4.66293 5.93968 4.7434C5.97666 4.8226 5.99682 4.90975 6 5.0065C5.99989 5.09458 5.98177 5.17941 5.94574 5.2566C5.90882 5.33569 5.84762 5.41542 5.7605 5.49517L1.11448 9.82047C0.987296 9.94154 0.83839 10 0.656333 10C0.530468 10 0.419913 9.97238 0.321628 9.91742C0.22215 9.8618 0.143892 9.78803 0.0845271 9.69433C0.0279683 9.60505 0 9.50625 0 9.39339C0 9.23017 0.0656133 9.08678 0.205814 8.9533L4.3218 5.1441V4.8559L0.203826 1.04484C0.0656133 0.913223 0 0.76983 0 0.606613C0 0.497846 0.0278271 0.400936 0.0845271 0.311439C0.144265 0.217147 0.223194 0.142001 0.323525 0.0843849C0.421386 0.0281862 0.531237 0 0.656333 0Z" />
+                                                                    </svg></span></a>
+                                                        <div
+                                                            class="absolute w-full h-full overflow-y-auto ps-[270px] top-0 opacity-0 invisible group-hover/category:opacity-100 group-hover/category:visible">
+                                                            <div
+                                                                class="w-full p-6 text-xs !leading-6 *:mb-4 *:break-inside-avoid-column columns-4 *:block *:w-full">
+                                                                <div><a href="https://tail.1ticaret.com/anasayfa"
+                                                                        class="flex font-semibold text-sm hover:text-primary mb-1 transition-colors">test1</a>
+                                                                </div>
+                                                                <div><a href="https://tail.1ticaret.com/anasayfa"
+                                                                        class="flex font-semibold text-sm hover:text-primary mb-1 transition-colors">test2</a>
+                                                                </div>
+                                                                <div><a href="https://tail.1ticaret.com/anasayfa"
+                                                                        class="flex font-semibold text-sm hover:text-primary mb-1 transition-colors">test3</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="group/category"><a
+                                                            href="https://tail.1ticaret.com/kampanyalar"
+                                                            id="header-menu-721001"
+                                                            class="p-4 flex justify-between items-center group-hover/category:bg-white z-10 relative transition-colors "><span
+                                                                class="font-semibold text-sm group-hover/category:text-primary transition-colors">Kampanyalar</span></a>
+                                                    </li>
+                                                    <li class="group/category"><a
+                                                            href="https://tail.1ticaret.com/anasayfa"
+                                                            id="header-menu-1461001"
+                                                            class="p-4 flex justify-between items-center group-hover/category:bg-white z-10 relative transition-colors "><span
+                                                                class="font-semibold text-sm group-hover/category:text-primary transition-colors">Anne
+                                                                & Çocuk</span></a></li>
+                                                    <li class="group/category"><a
+                                                            href="https://tail.1ticaret.com/musteri-hizmetleri"
+                                                            id="header-menu-621001"
+                                                            class="p-4 flex justify-between items-center group-hover/category:bg-white z-10 relative transition-colors "><span
+                                                                class="font-semibold text-sm group-hover/category:text-primary transition-colors">Müşteri
+                                                                Hizmetleri</span></a></li>
+                                                    <li class="group/category"><a
+                                                            href="https://tail.1ticaret.com/anasayfa"
+                                                            id="header-menu-1481001"
+                                                            class="p-4 flex justify-between items-center group-hover/category:bg-white z-10 relative transition-colors "><span
+                                                                class="font-semibold text-sm group-hover/category:text-primary transition-colors">Süpermarket</span></a>
+                                                    </li>
+                                                    <li class="group/category"><a
+                                                            href="https://tail.1ticaret.com/anasayfa"
+                                                            id="header-menu-1491001"
+                                                            class="p-4 flex justify-between items-center group-hover/category:bg-white z-10 relative transition-colors "><span
+                                                                class="font-semibold text-sm group-hover/category:text-primary transition-colors">Kozmetik</span></a>
+                                                    </li>
+                                                    <li class="group/category"><a
+                                                            href="https://tail.1ticaret.com/anasayfa"
+                                                            id="header-menu-1511001"
+                                                            class="p-4 flex justify-between items-center group-hover/category:bg-white z-10 relative transition-colors "><span
+                                                                class="font-semibold text-sm group-hover/category:text-primary transition-colors">Elektronik</span></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="fixed inset-0 bg-transparent pointer-events-none opacity-40 -z-10 hidden [.active_&]:group-hover:block">
+                                        </div>
+                                    </div>
+                                    <div class="group"><a href="https://tail.1ticaret.com/yeni-urunler"
+                                            id="header-menu-661001"
+                                            class="flex items-center font-medium text-sm px-4 gap-1 h-12 transition [.active_&]:group-hover:text-primary ">
+                                            Yeni
+                                        </a>
+                                        <div
+                                            class="w-full absolute shadow-lg rounded-b-custom [&:not(nav.relative_&)]:border-t bg-white inset-x-0 top-full opacity-0 hidden pointer-events-none [.active_&]:group-hover:opacity-100 [.active_&]:group-hover:block [.active_&]:group-hover:pointer-events-auto">
+                                            <div
+                                                class="container flex h-full [&:not(nav.relative_&)]:relative [&:not(nav.relative_&)]:!px-[1rem]">
+                                                <div class="p-6 w-full">
+                                                    <div
+                                                        class="columns-4 *:break-inside-avoid-column text-xs !leading-6 *:mb-4 *:block *:w-full">
+                                                        <div><a href="https://tail.1ticaret.com/anasayfa"
+                                                                id="header-menu-881001"
+                                                                class="flex font-medium text-sm hover:text-primary transition-colors mb-1 ">
+                                                                Yazıcı &amp; Projeksiyon
+                                                            </a>
+                                                            <div
+                                                                class="*:w-full [&_a]:flex [&_a]:transition-colors [&_a:hover]:text-primary">
+                                                                <a href="https://tail.1ticaret.com/anasayfa"
+                                                                    class="">Birinci Alt Kırılım 1</a><a
+                                                                    href="https://tail.1ticaret.com/anasayfa"
+                                                                    class="">Birinci Alt Kırılım 2</a><a
+                                                                    href="https://tail.1ticaret.com/anasayfa"
+                                                                    class="">Birinci Alt Kırılım 3</a><a
+                                                                    href="https://tail.1ticaret.com/anasayfa"
+                                                                    class="">Birinci Alt Kırılım 4</a><a
+                                                                    href="https://tail.1ticaret.com/anasayfa"
+                                                                    class="">Birinci Alt Kırılım 5</a><a
+                                                                    href="https://tail.1ticaret.com/anasayfa"
+                                                                    class="">Birinci Alt Kırılım 6</a>
+                                                            </div>
+                                                        </div>
+                                                        <div><a href="https://tail.1ticaret.com/anasayfa"
+                                                                id="header-menu-871001"
+                                                                class="flex font-medium text-sm hover:text-primary transition-colors mb-1 ">
+                                                                Bilgisayar/Tablet
+                                                            </a>
+                                                            <div
+                                                                class="*:w-full [&_a]:flex [&_a]:transition-colors [&_a:hover]:text-primary">
+                                                                <a href="https://tail.1ticaret.com/anasayfa"
+                                                                    class="">Bilgisayar Alt Kırılım 1</a><a
+                                                                    href="https://tail.1ticaret.com/anasayfa"
+                                                                    class="">Bilgisayar Alt Kırılım 2</a><a
+                                                                    href="https://tail.1ticaret.com/anasayfa"
+                                                                    class="">Bilgisayar Alt Kırılım 3</a><a
+                                                                    href="https://tail.1ticaret.com/anasayfa"
+                                                                    class="">Bilgisayar Alt Kırılım 4</a><a
+                                                                    href="https://tail.1ticaret.com/anasayfa"
+                                                                    class="">Bilgisayar Alt Kırılım 5</a><a
+                                                                    href="https://tail.1ticaret.com/anasayfa"
+                                                                    class="">Bilgisayar Alt Kırılım 6</a>
+                                                            </div>
+                                                        </div>
+                                                        <div><a href="https://tail.1ticaret.com/anasayfa"
+                                                                id="header-menu-891001"
+                                                                class="flex font-medium text-sm hover:text-primary transition-colors mb-1 ">
+                                                                Telefon &amp; Telefon Aksesuarları
+                                                            </a>
+                                                            <div
+                                                                class="*:w-full [&_a]:flex [&_a]:transition-colors [&_a:hover]:text-primary">
+                                                                <a href="https://tail.1ticaret.com/anasayfa"
+                                                                    class="">Telefon Alt Kırılım 1</a><a
+                                                                    href="https://tail.1ticaret.com/anasayfa"
+                                                                    class="">Telefon Alt Kırılım 2</a><a
+                                                                    href="https://tail.1ticaret.com/anasayfa"
+                                                                    class="">Telefon Alt Kırılım 3</a><a
+                                                                    href="https://tail.1ticaret.com/anasayfa"
+                                                                    class="">Telefon Alt Kırılım 4</a>
+                                                            </div>
+                                                        </div>
+                                                        <div><a href="https://tail.1ticaret.com/anasayfa"
+                                                                id="header-menu-901001"
+                                                                class="flex font-medium text-sm hover:text-primary transition-colors mb-1 ">
+                                                                TV, Görüntü &amp; Ses Sistemleri
+                                                            </a>
+                                                            <div
+                                                                class="*:w-full [&_a]:flex [&_a]:transition-colors [&_a:hover]:text-primary">
+                                                                <a href="https://tail.1ticaret.com/anasayfa"
+                                                                    class="">Ses Sistemleri Alt Kırılım
+                                                                    1</a><a
+                                                                    href="https://tail.1ticaret.com/anasayfa"
+                                                                    class="">Ses Sistemleri Alt Kırılım
+                                                                    2</a><a
+                                                                    href="https://tail.1ticaret.com/anasayfa"
+                                                                    class="">Ses Sistemleri Alt Kırılım
+                                                                    3</a><a
+                                                                    href="https://tail.1ticaret.com/anasayfa"
+                                                                    class="">Ses Sistemleri Alt Kırılım
+                                                                    4</a><a
+                                                                    href="https://tail.1ticaret.com/anasayfa"
+                                                                    class="">Ses Sistemleri Alt Kırılım
+                                                                    5</a><a
+                                                                    href="https://tail.1ticaret.com/anasayfa"
+                                                                    class="">Ses Sistemleri Alt Kırılım
+                                                                    6</a>
+                                                            </div>
+                                                        </div>
+                                                        <div><a href="https://tail.1ticaret.com/anasayfa"
+                                                                id="header-menu-911001"
+                                                                class="flex font-medium text-sm hover:text-primary transition-colors mb-1 ">
+                                                                Beyaz Eşya
+                                                            </a>
+                                                            <div
+                                                                class="*:w-full [&_a]:flex [&_a]:transition-colors [&_a:hover]:text-primary">
+                                                                <a href="https://tail.1ticaret.com/anasayfa"
+                                                                    class="">Beyaz Eşya Alt Kırılım 1</a><a
+                                                                    href="https://tail.1ticaret.com/anasayfa"
+                                                                    class="">Beyaz Eşya Alt Kırılım 2</a><a
+                                                                    href="https://tail.1ticaret.com/anasayfa"
+                                                                    class="">Beyaz Eşya Alt Kırılım 3</a><a
+                                                                    href="https://tail.1ticaret.com/anasayfa"
+                                                                    class="">Beyaz Eşya Alt Kırılım 4</a>
+                                                            </div>
+                                                        </div>
+                                                        <div><a href="https://tail.1ticaret.com/anasayfa"
+                                                                id="header-menu-941001"
+                                                                class="flex font-medium text-sm hover:text-primary transition-colors mb-1 ">
+                                                                Foto &amp; Kamera
+                                                            </a>
+                                                            <div
+                                                                class="*:w-full [&_a]:flex [&_a]:transition-colors [&_a:hover]:text-primary">
+                                                                <a href="https://tail.1ticaret.com/anasayfa"
+                                                                    class="">Foto &amp; Kamera Alt Kırılım
+                                                                    1</a><a
+                                                                    href="https://tail.1ticaret.com/anasayfa"
+                                                                    class="">Foto &amp; Kamera Alt Kırılım
+                                                                    2</a><a
+                                                                    href="https://tail.1ticaret.com/anasayfa"
+                                                                    class="">Foto &amp; Kamera Alt Kırılım
+                                                                    3</a><a
+                                                                    href="https://tail.1ticaret.com/anasayfa"
+                                                                    class="">Foto &amp; Kamera Alt Kırılım
+                                                                    4</a>
+                                                            </div>
+                                                        </div>
+                                                        <div><a href="https://tail.1ticaret.com/anasayfa"
+                                                                id="header-menu-951001"
+                                                                class="flex font-medium text-sm hover:text-primary transition-colors mb-1 ">
+                                                                Oyun &amp; Oyun Konsolları
+                                                            </a>
+                                                            <div
+                                                                class="*:w-full [&_a]:flex [&_a]:transition-colors [&_a:hover]:text-primary">
+                                                                <a href="https://tail.1ticaret.com/anasayfa"
+                                                                    class="">Oyun Konsolları Alt Kırılım
+                                                                    1</a><a
+                                                                    href="https://tail.1ticaret.com/anasayfa"
+                                                                    class="">Oyun Konsolları Alt Kırılım
+                                                                    2</a><a
+                                                                    href="https://tail.1ticaret.com/anasayfa"
+                                                                    class="">Oyun Konsolları Alt Kırılım
+                                                                    3</a><a
+                                                                    href="https://tail.1ticaret.com/anasayfa"
+                                                                    class="">Oyun Konsolları Alt Kırılım
+                                                                    4</a>
+                                                            </div>
+                                                        </div>
+                                                        <div><a href="https://tail.1ticaret.com/anasayfa"
+                                                                id="header-menu-1381001"
+                                                                class="flex font-medium text-sm hover:text-primary transition-colors mb-1 ">
+                                                                Aksesuar
+                                                            </a>
+                                                            <div
+                                                                class="*:w-full [&_a]:flex [&_a]:transition-colors [&_a:hover]:text-primary">
+                                                                <a href="https://tail.1ticaret.com/anasayfa"
+                                                                    class="">Aksesuar Alt Kırılım 1</a><a
+                                                                    href="https://tail.1ticaret.com/anasayfa"
+                                                                    class="">Aksesuar Alt Kırılım 2</a><a
+                                                                    href="https://tail.1ticaret.com/anasayfa"
+                                                                    class="">Aksesuar Alt Kırılım 3</a><a
+                                                                    href="https://tail.1ticaret.com/anasayfa"
+                                                                    class="">Aksesuar Alt Kırılım 4</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="w-1/4 flex flex-col items-end p-6 space-y-4 *:rounded-custom">
+                                                    <picture class="w-full rounded-custom overflow-hidden">
+                                                        <img data-src="https://tail.1ticaret.com/Data/img/menu_item/6/tr_img_1_66.webp"
+                                                            width="200" height="300" alt="Yeni"
+                                                            class="lazyload">
+                                                    </picture>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="fixed inset-0 bg-transparent pointer-events-none opacity-40 -z-10 hidden [.active_&]:group-hover:block">
+                                        </div>
+                                    </div>
+                                    <div class="group"><a href="https://tail.1ticaret.com/indirimli-urunler"
+                                            id="header-menu-3291001"
+                                            class="flex items-center font-medium text-sm px-4 gap-1 h-12 transition [.active_&]:group-hover:text-primary ">
+                                            İndirim
+                                        </a>
+                                        <div
+                                            class="w-full absolute shadow-lg rounded-b-custom [&:not(nav.relative_&)]:border-t bg-white inset-x-0 top-full opacity-0 hidden pointer-events-none [.active_&]:group-hover:opacity-100 [.active_&]:group-hover:block [.active_&]:group-hover:pointer-events-auto">
+                                            <div
+                                                class="container flex h-full [&:not(nav.relative_&)]:relative [&:not(nav.relative_&)]:!px-[1rem]">
+                                                <div class="p-6 w-full">
+                                                    <div
+                                                        class="columns-4 *:break-inside-avoid-column text-xs !leading-6 *:mb-4 *:block *:w-full">
+                                                        <div><a href="https://tail.1ticaret.com/anasayfa"
+                                                                id="header-menu-3301001"
+                                                                class="flex font-medium text-sm hover:text-primary transition-colors mb-1 ">
+                                                                KADIN
+                                                            </a>
+                                                            <div
+                                                                class="*:w-full [&_a]:flex [&_a]:transition-colors [&_a:hover]:text-primary">
+                                                                <a href="https://tail.1ticaret.com/anasayfa"
+                                                                    class="">Giyim</a><a
+                                                                    href="https://tail.1ticaret.com/anasayfa"
+                                                                    class="">Ayakkabı</a><a
+                                                                    href="https://tail.1ticaret.com/anasayfa"
+                                                                    class="">Aksesuar</a><a
+                                                                    href="https://tail.1ticaret.com/anasayfa"
+                                                                    class="">Çanta</a><a
+                                                                    href="https://tail.1ticaret.com/anasayfa"
+                                                                    class="">İç Giyim</a><a
+                                                                    href="https://tail.1ticaret.com/anasayfa"
+                                                                    class="">Lüks</a><a
+                                                                    href="https://tail.1ticaret.com/anasayfa"
+                                                                    class="underline capitalize font-medium text-xs mt-1">Tümünü
+                                                                    Gör</a>
+                                                            </div>
+                                                        </div>
+                                                        <div><a href="https://tail.1ticaret.com/anasayfa"
+                                                                id="header-menu-3311001"
+                                                                class="flex font-medium text-sm hover:text-primary transition-colors mb-1 ">
+                                                                ERKEK
+                                                            </a>
+                                                            <div
+                                                                class="*:w-full [&_a]:flex [&_a]:transition-colors [&_a:hover]:text-primary">
+                                                                <a href="https://tail.1ticaret.com/anasayfa"
+                                                                    class="">Giyim</a><a
+                                                                    href="https://tail.1ticaret.com/anasayfa"
+                                                                    class="">Ayakkabı</a><a
+                                                                    href="https://tail.1ticaret.com/anasayfa"
+                                                                    class="">Aksesuar</a><a
+                                                                    href="https://tail.1ticaret.com/anasayfa"
+                                                                    class="">Çanta</a><a
+                                                                    href="https://tail.1ticaret.com/anasayfa"
+                                                                    class="">İç Giyim</a><a
+                                                                    href="https://tail.1ticaret.com/anasayfa"
+                                                                    class="">Lüks</a><a
+                                                                    href="https://tail.1ticaret.com/anasayfa"
+                                                                    class="underline capitalize font-medium text-xs mt-1">Tümünü
+                                                                    Gör</a>
+                                                            </div>
+                                                        </div>
+                                                        <div><a href="https://tail.1ticaret.com/anasayfa"
+                                                                id="header-menu-3321001"
+                                                                class="flex font-medium text-sm hover:text-primary transition-colors mb-1 ">
+                                                                ÇOCUK
+                                                            </a>
+                                                            <div
+                                                                class="*:w-full [&_a]:flex [&_a]:transition-colors [&_a:hover]:text-primary">
+                                                                <a href="https://tail.1ticaret.com/anasayfa"
+                                                                    class="">Giyim</a><a
+                                                                    href="https://tail.1ticaret.com/anasayfa"
+                                                                    class="">Ayakkabı</a><a
+                                                                    href="https://tail.1ticaret.com/anasayfa"
+                                                                    class="">Aksesuar</a><a
+                                                                    href="https://tail.1ticaret.com/anasayfa"
+                                                                    class="">Çanta</a><a
+                                                                    href="https://tail.1ticaret.com/anasayfa"
+                                                                    class="">İç Giyim</a><a
+                                                                    href="https://tail.1ticaret.com/anasayfa"
+                                                                    class="">Lüks</a><a
+                                                                    href="https://tail.1ticaret.com/anasayfa"
+                                                                    class="underline capitalize font-medium text-xs mt-1">Tümünü
+                                                                    Gör</a>
+                                                            </div>
+                                                        </div>
+                                                        <div><a href="https://tail.1ticaret.com/anasayfa"
+                                                                id="header-menu-3331001"
+                                                                class="flex font-medium text-sm hover:text-primary transition-colors mb-1 ">
+                                                                AKSESUAR
+                                                            </a>
+                                                            <div
+                                                                class="*:w-full [&_a]:flex [&_a]:transition-colors [&_a:hover]:text-primary">
+                                                                <a href="https://tail.1ticaret.com/anasayfa"
+                                                                    class="">Giyim</a><a
+                                                                    href="https://tail.1ticaret.com/anasayfa"
+                                                                    class="">Ayakkabı</a><a
+                                                                    href="https://tail.1ticaret.com/anasayfa"
+                                                                    class="">Aksesuar</a><a
+                                                                    href="https://tail.1ticaret.com/anasayfa"
+                                                                    class="">Çanta</a><a
+                                                                    href="https://tail.1ticaret.com/anasayfa"
+                                                                    class="">İç Giyim</a><a
+                                                                    href="https://tail.1ticaret.com/anasayfa"
+                                                                    class="">Lüks</a><a
+                                                                    href="https://tail.1ticaret.com/anasayfa"
+                                                                    class="underline capitalize font-medium text-xs mt-1">Tümünü
+                                                                    Gör</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="fixed inset-0 bg-transparent pointer-events-none opacity-40 -z-10 hidden [.active_&]:group-hover:block">
+                                        </div>
+                                    </div>
+                                    <div class="group"><a href="https://tail.1ticaret.com/kampanyalar"
+                                            id="header-menu-681001"
+                                            class="flex items-center font-medium text-sm px-4 gap-1 h-12 transition [.active_&]:group-hover:text-primary ">
+                                            Kampanya
+                                        </a></div>
+                                    <div class="group"><a href="https://tail.1ticaret.com/marka-listesi"
+                                            id="header-menu-691001"
+                                            class="flex items-center font-medium text-sm px-4 gap-1 h-12 transition [.active_&]:group-hover:text-primary ">
+                                            Markalar
+                                        </a></div>
+                                    <div class="group"><a href="https://tail.1ticaret.com/video-galeri"
+                                            id="header-menu-861001"
+                                            class="flex items-center font-medium text-sm px-4 gap-1 h-12 transition [.active_&]:group-hover:text-primary ">
+                                            Galeri
+                                        </a></div>
+                                    <div class="group"><a href="https://tail.1ticaret.com/sss-sayfasi"
+                                            id="header-menu-851001"
+                                            class="flex items-center font-medium text-sm px-4 gap-1 h-12 transition [.active_&]:group-hover:text-primary "><b>SSS</b></a>
+                                    </div>
+                                    <div class="group"><a href="https://tail.1ticaret.com/blog"
+                                            id="header-menu-701001"
+                                            class="flex items-center font-medium text-sm px-4 gap-1 h-12 transition [.active_&]:group-hover:text-primary "><b
+                                                class="text-red-700">Blog </b></a></div>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+                <!-- Content sections would go here -->
+                
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
