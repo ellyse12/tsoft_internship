@@ -50,22 +50,27 @@
                     <div class="relative group">
                         <button id="langButton"
                             class="flex items-center gap-2 text-xs font-semibold hover:text-orange-500 transition-colors">
-                            <img id="langIcon" src="https://flagcdn.com/w40/tr.png" class="w-4 h-4" alt="Türkçe">
+                            <img id="langIcon" src="https://flagcdn.com/w40/tr.png" class="object-contain w-5 h-5"
+                                alt="Türkçe">
                             <span id="langText">Türkçe</span>
                         </button>
                         <div
                             class="absolute right-0 mt-2 w-48 bg-white shadow-lg rounded-md border hidden group-hover:block z-50">
                             <div class="py-1" id="langMenu">
                                 <a href="#" class="flex items-center gap-2 px-4 py-2 text-sm hover:bg-gray-100">
-                                    <img src="https://flagcdn.com/w40/tr.png" alt="Turkish" class="w-4 h-4">
+                                    <img src="https://flagcdn.com/w40/tr.png" alt="Turkish"
+                                        class="w-5 h-5 object-contain">
                                     <span>Turkish</span>
                                 </a>
                                 <a href="#" class="flex items-center gap-2 px-4 py-2 text-sm hover:bg-gray-100">
-                                    <img src="https://flagcdn.com/w40/gb.png" alt="English" class="w-4 h-4">
+                                    <img src="https://flagcdn.com/w40/gb.png" alt="English"
+                                        class="w-5 h-5 object-contain">
                                     <span>English</span>
                                 </a>
-                                <a href="#" class="flex items-center gap-2 px-4 py-2 text-sm hover:bg-gray-100">
-                                    <img src="https://flagcdn.com/w40/sa.png" alt="Arabic" class="w-4 h-4">
+                                <a href="#"
+                                    class="flex items-center gap-2 px-4 py-2 text-sm hover:bg-gray-100 object-contain">
+                                    <img src="https://flagcdn.com/w40/sa.png" alt="Arabic"
+                                        class="w-5 h-5 object-contain">
                                     <span>Arabic</span>
                                 </a>
                             </div>
@@ -166,11 +171,11 @@
                         <div>
                             <span
                                 class="capitalize flex font-medium text-sm items-center pe-4 gap-1 cursor-pointer h-12">
-                                <svg width="20px" height="20px" viewBox="0 0 20 20" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M20 7L4 7" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" />
-                                    <path d="M20 12L4 12" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" />
-                                    <path d="M20 17L4 17" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" />
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                    viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5">
+                                    </path>
                                 </svg>Kategoriler
                             </span>
                         </div>
@@ -303,7 +308,7 @@
                         </div>
                     </div>
 
-                    <!-- Search box in separate row -->
+
                     <div class="w-full">
                         <form action="" class="w-full relative">
                             <div class="w-full py-2 pl-4 pr-10 bg-slate-100 border border-gray-300 rounded-xl peer focus-within:border-orange-500 focus-within:ring-2 focus-within:ring-orange-500"
@@ -535,13 +540,13 @@
                                     <div class="form-item sm:w-full">
                                         <div class="relative">
                                             <input type="email" name="email"
-                                                class=" focus-within:ring-2 focus-within:ring-orange-500 focus-within:border-orange-500 h-10 pe-8 outline-none rounded-lg px-2 w-full"
+                                                class=" focus-within:ring-2 focus-within:ring-orange-500 focus-within:border-orange-500 h-12 pe-8 shadow-md  outline-none rounded-md px-5 py-3 w-full text-md "
                                                 autocomplete="on" placeholder="E-posta adresinizi giriniz *"
                                                 aria-label="E-posta adresinizi giriniz">
                                         </div>
                                     </div>
                                     <button type="submit" id="newsletter-button"
-                                        class="btn bg-orange-500 text-white rounded-md h-10 w-1/4 md:w-24 flex-shrink-0">Kayıt
+                                        class="btn bg-orange-500 text-white rounded-lg h-12 w-28 flex-shrink-0 shadow-lg text-md font-semibold ">Kayıt
                                         Ol</button>
                                 </div>
                             </form>
@@ -571,7 +576,6 @@
                             </div>
                         </div>
                         <div class="border-b md:border-none">
-                            <!-- Accordion Button -->
                             <button
                                 class="flex accordion-btn w-full justify-between items-center py-3 md:py-0 md:block">
                                 <div class="font-semibold flex items-center">
@@ -583,8 +587,6 @@
                                     </svg>
                                 </div>
                             </button>
-
-                            <!-- Accordion Content -->
                             <div
                                 class="accordion-content active md:block [&_a]:block [&_a]:text-sm [&_a:hover]:text-primary [&_a:hover]:underline mt-3 md:mt-0">
                                 <a href="" class="py-0.5">Teslimat Koşulları</a>
@@ -595,7 +597,6 @@
                             </div>
                         </div>
                         <div>
-                            <!-- Hızlı Erişim Accordion -->
                             <div class="border-b md:border-none">
                                 <button
                                     class="accordion-btn w-full flex justify-between items-center py-3 md:py-0 md:block">
