@@ -1239,6 +1239,18 @@ video {
   border-top-width: 1px;
 }
 
+.border-l{
+  border-left-width: 1px;
+}
+
+.border-r{
+  border-right-width: 1px;
+}
+
+.border-r-2{
+  border-right-width: 2px;
+}
+
 .border-gray-300{
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity, 1));
