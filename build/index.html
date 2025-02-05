@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>T-Soft Clone Page</title>
     <link href="./css/style.css" rel="stylesheet">
     <link href="./css/output.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
@@ -908,11 +908,7 @@
             });
         });
 
-        document.addEventListener("click", (event) => {
-            if (!currencyButton.contains(event.target) && !currencyMenu.contains(event.target)) {
-                currencyMenu.classList.add("hidden");
-            }
-        });
+
         const langButton = document.getElementById("langButton");
         const langMenu = document.getElementById("langMenu");
         const langText = document.getElementById("langText");
@@ -978,12 +974,16 @@
             mobileMenu.classList.toggle('active');
         });
 
-        const newsSwiper = new Swiper('.newsSwiper', {
+        const newsSwiper = new Swiper(".newsSwiper", {
             slidesPerView: 1,
             spaceBetween: 20,
             loop: false,
             breakpoints: {
                 768: {
+                    slidesPerView: 2,
+                    spaceBetween: 25
+                },
+                1024: {
                     slidesPerView: 3,
                     spaceBetween: 30
                 }
